@@ -79,18 +79,23 @@
 
 
 
-<meta name="description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s) 12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器 1234Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
+<meta name="description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content=" 笔记-疯狂Java讲义-第5章 面向对象（下）">
 <meta property="og:url" content="http://yoursite.com/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/index.html">
 <meta property="og:site_name" content="炸毛刺猬的个人BLOG">
-<meta property="og:description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s) 12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器 1234Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
+<meta property="og:description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-18T08:34:25.057Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/非静态内部类.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/内部类存储外部类对象的引用.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/匿名内部类.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/Lambda.png">
+<meta property="og:updated_time" content="2019-03-19T13:21:11.804Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content=" 笔记-疯狂Java讲义-第5章 面向对象（下）">
-<meta name="twitter:description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s) 12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器 1234Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
+<meta name="twitter:description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/非静态内部类.png">
 
 
 
@@ -368,23 +373,80 @@
 <li><p>包装类和字符串相互转换</p>
 <ul>
 <li><p>包装类的parseXxx(String s)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i=Integer.parseInt(&quot;1223&quot;);</span><br><span class="line">System.out.println(i);   //输出1223</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i=Integer.parseInt(&quot;1223&quot;);</span><br><span class="line">System.out.println(i);   //输出1223</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>包装类的Xxx(String s)构造器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Integer i = new Integer(&quot;123&quot;);</span><br><span class="line">System.out.println(i);   //输出123</span><br><span class="line">``` </span><br><span class="line">*   String类的多个重载valueOf(), 将boolean、int、double、float、Object、char类型的参数转变为String类型</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i = new Integer(&quot;123&quot;);</span><br><span class="line">System.out.println(i);   //输出123</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>String类的多个重载valueOf(), 将boolean、int、double、float、Object、char类型的参数转变为String类型</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String s=String.valueOf(2.4);  //将double类型的2.4转化成String</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>String s=String.valueOf(2.4);  //将double类型的2.4转化成String</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*   包装类的compare(xxx val1, xxx val2)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>包装类的compare(xxx val1, xxx val2) </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Integer.compare(int a, int b)   //a&gt;b则返回1，a&lt;b返回-1，相等返回0</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>Integer.compare(int a, int b)   //a&gt;b则返回1，a&lt;b返回-1，相等返回0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">***</span><br><span class="line">### 对象的比较</span><br><span class="line">*   equals</span><br><span class="line">String重写了Object的equals方法，当两个字符串的内容相同时，就返回true。</span><br><span class="line">而“==”是比较值是否相等。c和cc里存的是实例的地址，地址不相等。</span><br></pre></td></tr></table></figure></p>
-<p>String c=”abc”;<br>String cc=new String(“abc”);<br>System.out.println(c.equals(cc));   //true<br>System.out.println(c==cc);          //false<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">***</span><br><span class="line">### 类成员</span><br><span class="line">用static修饰的就是类成员，static不能修饰构造器。</span><br><span class="line">类成员变量在类第一次被加载时就分配空间。</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line">### final修饰符</span><br><span class="line">final修饰的变量一旦被附了初值就不能改变。</span><br><span class="line">*   成员变量</span><br><span class="line">final成员变量必须显式赋初值</span><br><span class="line">*   局部变量</span><br><span class="line">局部变量系统不会自动赋初值，必须由程序员显式初始化</span><br><span class="line">*   引用变量</span><br><span class="line">final修饰引用变量时，因为引用变量存的是地址，及地址一旦被赋值就不能改变，但是可以改变引用所指的地址的值。</span><br><span class="line">*   宏替换</span><br><span class="line">若final变量在定义时就被附了初始值，且该初始值在编译时可以被确定，此时的final变量相当于一个直接量，编译器会把所有用到该变量的地方替换成值。</span><br><span class="line">*   final方法</span><br><span class="line">final方法不可被重写</span><br><span class="line">*   final类</span><br><span class="line">final修饰的类不能有子类。</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line">### 抽象类</span><br><span class="line">抽象类定义的是一种模板</span><br><span class="line">*   使用abstract修饰符，若类中有抽象方法，这个类只能被定义成抽象类；抽象类里可以没有抽象方法。</span><br><span class="line">*   抽象类没有方法体</span><br><span class="line">*   抽象类不能被实例化，不能使用new创建抽象类实例</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line">### Java8改进的接口</span><br><span class="line">接口定义的是一种规范，所以没有构造器和初始化块，接口里所有成员都是public权限，接口里的成员变量只能是静态常量（public static final），成员方法只能是抽象方法或者默认方法（default）</span><br><span class="line">*   接口的继承</span><br><span class="line">可以继承多个接口</span><br><span class="line">*   接口的实现</span><br></pre></td></tr></table></figure></p>
-<p>interface Product{}<br>class Printer implements Product {}</p>
-<p>Product p = new Printer();<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">***</span><br><span class="line">### 内部类</span><br><span class="line">内部类的作用是：</span><br><span class="line">1. 更好的封装性</span><br><span class="line">2. 内部类可以直接访问外部类的private数据</span><br><span class="line">3. 匿名内部类适合创建只使用一次的类</span><br><span class="line"></span><br><span class="line">*   非静态内部类，就是在类的内部定义一个非静态类成员变量，非静态内部类可以直接访问外部类的private成员</span><br><span class="line">![非静态内部类](笔记-疯狂Java讲义-第5章-面向对象（下）/非静态内部类.png)</span><br><span class="line">需要注意的是，非静态内部类在创建实例时会保存一个外部类对象的引用，如下：</span><br><span class="line">![](笔记-疯狂Java讲义-第5章-面向对象（下）/内部类存储外部类对象的引用.png)</span><br><span class="line"></span><br><span class="line">*   静态内部类</span><br><span class="line">静态内部类只能访问外部类的静态成员，静态内部类的实例也不能访问外部类的实例成员</span><br><span class="line">*   使用内部类</span><br><span class="line">使用非静态内部类时：</span><br></pre></td></tr></table></figure></p>
-<p>Out.In in = new Out().in();  //非静态内部类的构造器必须由外部类的对象调用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">使用静态内部类“</span><br></pre></td></tr></table></figure></p>
-<p>Out.In in = new Out.In();<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">*   Java8改进的匿名内部类</span><br><span class="line">创建匿名内部类时会创建一个匿名内部类的实例，这个类的定义会立即消失，不能重复使用。</span><br><span class="line">匿名内部类必须继承一个父类或者实现一个接口。</span><br><span class="line">![匿名内部类](\笔记-疯狂Java讲义-第5章-面向对象（下）/匿名内部类.png)</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line">### Java8新增的lambda表达式</span><br><span class="line">Lambda表达式和匿名内部类的区别：</span><br><span class="line">1. 匿名内部类可以为任何接口创建实例，Lambda表达式只能为函数式接口创建实例</span><br><span class="line">2. 匿名内部类可以为抽象类甚至普通类创建对象；Lambda只能为函数式接口创建实例</span><br><span class="line">3. 匿名内部类实现的抽象方法体中允许调用接口中的默认方法；Lambda不行</span><br><span class="line">![Lambda](笔记-疯狂Java讲义-第5章-面向对象（下）\Lambda.png)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">***</span><br><span class="line">### 枚举类</span><br><span class="line">默认继承java.lang.enum</span><br></pre></td></tr></table></figure></p>
-<p>enum Season {<br>    SPRING, SUMMER, FALL, WINTER<br>}<br><code>`</code><br>使用时<code>Season.SPRING</code></p>
+<hr>
+<h3 id="对象的比较"><a href="#对象的比较" class="headerlink" title="对象的比较"></a>对象的比较</h3><ul>
+<li>equals<br>String重写了Object的equals方法，当两个字符串的内容相同时，就返回true。<br>而“==”是比较值是否相等。c和cc里存的是实例的地址，地址不相等。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String c=&quot;abc&quot;;</span><br><span class="line">String cc=new String(&quot;abc&quot;);</span><br><span class="line">System.out.println(c.equals(cc));   //true</span><br><span class="line">System.out.println(c==cc);          //false</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h3 id="类成员"><a href="#类成员" class="headerlink" title="类成员"></a>类成员</h3><p>用static修饰的就是类成员，static不能修饰构造器。<br>类成员变量在类第一次被加载时就分配空间。</p>
+<hr>
+<h3 id="final修饰符"><a href="#final修饰符" class="headerlink" title="final修饰符"></a>final修饰符</h3><p>final修饰的变量一旦被附了初值就不能改变。</p>
+<ul>
+<li>成员变量<br>final成员变量必须显式赋初值</li>
+<li>局部变量<br>局部变量系统不会自动赋初值，必须由程序员显式初始化</li>
+<li>引用变量<br>final修饰引用变量时，因为引用变量存的是地址，及地址一旦被赋值就不能改变，但是可以改变引用所指的地址的值。</li>
+<li>宏替换<br>若final变量在定义时就被附了初始值，且该初始值在编译时可以被确定，此时的final变量相当于一个直接量，编译器会把所有用到该变量的地方替换成值。</li>
+<li>final方法<br>final方法不可被重写</li>
+<li>final类<br>final修饰的类不能有子类。</li>
+</ul>
+<hr>
+<h3 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h3><p>抽象类定义的是一种模板</p>
+<ul>
+<li>使用abstract修饰符，若类中有抽象方法，这个类只能被定义成抽象类；抽象类里可以没有抽象方法。</li>
+<li>抽象类没有方法体</li>
+<li>抽象类不能被实例化，不能使用new创建抽象类实例</li>
+</ul>
+<hr>
+<h3 id="Java8改进的接口"><a href="#Java8改进的接口" class="headerlink" title="Java8改进的接口"></a>Java8改进的接口</h3><p>接口定义的是一种规范，所以没有构造器和初始化块，接口里所有成员都是public权限，接口里的成员变量只能是静态常量（public static final），成员方法只能是抽象方法或者默认方法（default）</p>
+<ul>
+<li>接口的继承<br>可以继承多个接口</li>
+<li>接口的实现 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface Product&#123;&#125;</span><br><span class="line">class Printer implements Product &#123;&#125;</span><br><span class="line"></span><br><span class="line">Product p = new Printer();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h3 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h3><p>内部类的作用是：</p>
+<ol>
+<li>更好的封装性</li>
+<li>内部类可以直接访问外部类的private数据</li>
+<li>匿名内部类适合创建只使用一次的类</li>
+</ol>
+<ul>
+<li><p>非静态内部类，就是在类的内部定义一个非静态类成员变量，非静态内部类可以直接访问外部类的private成员<br><img src="/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/非静态内部类.png" alt="非静态内部类"><br>需要注意的是，非静态内部类在创建实例时会保存一个外部类对象的引用，如下：<br><img src="/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/内部类存储外部类对象的引用.png" alt=""></p>
+</li>
+<li><p>静态内部类<br>静态内部类只能访问外部类的静态成员，静态内部类的实例也不能访问外部类的实例成员</p>
+</li>
+<li>使用内部类<br>使用非静态内部类时：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Out.In in = new Out().in();  //非静态内部类的构造器必须由外部类的对象调用</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>使用静态内部类“<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Out.In in = new Out.In();</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>Java8改进的匿名内部类<br>创建匿名内部类时会创建一个匿名内部类的实例，这个类的定义会立即消失，不能重复使用。<br>匿名内部类必须继承一个父类或者实现一个接口。<br><img src="/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/匿名内部类.png" alt="匿名内部类"></li>
+</ul>
+<hr>
+<h3 id="Java8新增的lambda表达式"><a href="#Java8新增的lambda表达式" class="headerlink" title="Java8新增的lambda表达式"></a>Java8新增的lambda表达式</h3><p>Lambda表达式和匿名内部类的区别：</p>
+<ol>
+<li>匿名内部类可以为任何接口创建实例，Lambda表达式只能为函数式接口创建实例</li>
+<li>匿名内部类可以为抽象类甚至普通类创建对象；Lambda只能为函数式接口创建实例</li>
+<li>匿名内部类实现的抽象方法体中允许调用接口中的默认方法；Lambda不行<br><img src="/2019/03/13/笔记-疯狂Java讲义-第5章-面向对象（下）/Lambda.png" alt="Lambda"></li>
+</ol>
+<hr>
+<h3 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h3><p>默认继承java.lang.enum<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">enum Season &#123;</span><br><span class="line">    SPRING, SUMMER, FALL, WINTER</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>使用时<code>Season.SPRING</code></p>
 
       
     </div>
@@ -424,6 +486,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/16/笔记-疯狂Java讲义-第6章-Java基础类库/" rel="prev" title=" 笔记-疯狂Java讲义-第6章 Java基础类库">
+                 笔记-疯狂Java讲义-第6章 Java基础类库 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -505,7 +571,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -576,7 +642,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java8增强的包装类"><span class="nav-number">1.</span> <span class="nav-text">Java8增强的包装类</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java8增强的包装类"><span class="nav-number">1.</span> <span class="nav-text">Java8增强的包装类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象的比较"><span class="nav-number">2.</span> <span class="nav-text">对象的比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类成员"><span class="nav-number">3.</span> <span class="nav-text">类成员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#final修饰符"><span class="nav-number">4.</span> <span class="nav-text">final修饰符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#抽象类"><span class="nav-number">5.</span> <span class="nav-text">抽象类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java8改进的接口"><span class="nav-number">6.</span> <span class="nav-text">Java8改进的接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内部类"><span class="nav-number">7.</span> <span class="nav-text">内部类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java8新增的lambda表达式"><span class="nav-number">8.</span> <span class="nav-text">Java8新增的lambda表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#枚举类"><span class="nav-number">9.</span> <span class="nav-text">枚举类</span></a></li></ol></div>
             
 
           </div>
