@@ -82,20 +82,20 @@
 <meta name="description" content="类和对象 static修饰的成员变量和方法是属于类的，可以直接用类名.成员变量/方法名调用，Java也允许实例调用static修饰的类成员变量/方法，但这是不合理的；static修饰的成员不能访问没有static的成员 对象是一种引用类型，真正的对象在堆中存放，定义一个Person p = new Person();  //Person类有两个成员变量name和age，内存示意图如下，引用变量中存">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="笔记-疯狂Java讲义-第4章 面向对象（上）">
+<meta property="og:title" content="笔记-疯狂Java讲义-第4章-面向对象（上）">
 <meta property="og:url" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/index.html">
-<meta property="og:site_name" content="炸毛刺猬的个人BLOG">
+<meta property="og:site_name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
 <meta property="og:description" content="类和对象 static修饰的成员变量和方法是属于类的，可以直接用类名.成员变量/方法名调用，Java也允许实例调用static修饰的类成员变量/方法，但这是不合理的；static修饰的成员不能访问没有static的成员 对象是一种引用类型，真正的对象在堆中存放，定义一个Person p = new Person();  //Person类有两个成员变量name和age，内存示意图如下，引用变量中存">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/引用变量指向实际对象.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/构造器重载.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/初始化块.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/初始化块结果.png">
-<meta property="og:updated_time" content="2019-03-11T03:21:02.229Z">
+<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/%E5%BC%95%E7%94%A8%E5%8F%98%E9%87%8F%E6%8C%87%E5%90%91%E5%AE%9E%E9%99%85%E5%AF%B9%E8%B1%A1.png">
+<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/%E6%9E%84%E9%80%A0%E5%99%A8%E9%87%8D%E8%BD%BD.png">
+<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/%E5%88%9D%E5%A7%8B%E5%8C%96%E5%9D%97.png">
+<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/%E5%88%9D%E5%A7%8B%E5%8C%96%E5%9D%97%E7%BB%93%E6%9E%9C.png">
+<meta property="og:updated_time" content="2019-05-30T16:04:45.270Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笔记-疯狂Java讲义-第4章 面向对象（上）">
+<meta name="twitter:title" content="笔记-疯狂Java讲义-第4章-面向对象（上）">
 <meta name="twitter:description" content="类和对象 static修饰的成员变量和方法是属于类的，可以直接用类名.成员变量/方法名调用，Java也允许实例调用static修饰的类成员变量/方法，但这是不合理的；static修饰的成员不能访问没有static的成员 对象是一种引用类型，真正的对象在堆中存放，定义一个Person p = new Person();  //Person类有两个成员变量name和age，内存示意图如下，引用变量中存">
-<meta name="twitter:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/引用变量指向实际对象.png">
+<meta name="twitter:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第4章-面向对象（上）/%E5%BC%95%E7%94%A8%E5%8F%98%E9%87%8F%E6%8C%87%E5%90%91%E5%AE%9E%E9%99%85%E5%AF%B9%E8%B1%A1.png">
 
 
 
@@ -131,7 +131,7 @@
 
 
 
-  <title>笔记-疯狂Java讲义-第4章 面向对象（上） | 炸毛刺猬的个人BLOG</title>
+  <title>笔记-疯狂Java讲义-第4章-面向对象（上） | 炸毛刺猬 (゜-゜)つロ 干杯~</title>
   
 
 
@@ -161,7 +161,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">炸毛刺猬的个人BLOG</span>
+        <span class="site-title">炸毛刺猬 (゜-゜)つロ 干杯~</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -277,7 +277,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="炸毛刺猬的个人BLOG">
+      <meta itemprop="name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
     </span>
 
     
@@ -285,7 +285,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">笔记-疯狂Java讲义-第4章 面向对象（上）</h1>
+          <h1 class="post-title" itemprop="name headline">笔记-疯狂Java讲义-第4章-面向对象（上）</h1>
         
 
         <div class="post-meta">
@@ -337,7 +337,7 @@
 
           
           
-             <span id="/笔记-疯狂Java讲义-第4章-面向对象（上）/" class="leancloud_visitors" data-flag-title="笔记-疯狂Java讲义-第4章 面向对象（上）">
+             <span id="/笔记-疯狂Java讲义-第4章-面向对象（上）/" class="leancloud_visitors" data-flag-title="笔记-疯狂Java讲义-第4章-面向对象（上）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -371,7 +371,7 @@
       
         <h3 id="类和对象"><a href="#类和对象" class="headerlink" title="类和对象"></a>类和对象</h3><ul>
 <li>static修饰的成员变量和方法是属于类的，可以直接用类名.成员变量/方法名调用，Java也允许实例调用static修饰的类成员变量/方法，但这是不合理的；static修饰的成员不能访问没有static的成员</li>
-<li>对象是一种引用类型，真正的对象在堆中存放，定义一个<code>Person p = new Person();  //Person类有两个成员变量name和age</code>，内存示意图如下，引用变量中存的是实际对象的地址。<br><img src="/笔记-疯狂Java讲义-第4章-面向对象（上）/引用变量指向实际对象.png" alt="引用变量指向实际对象"></li>
+<li>对象是一种引用类型，真正的对象在堆中存放，定义一个<code>Person p = new Person();  //Person类有两个成员变量name和age</code>，内存示意图如下，引用变量中存的是实际对象的地址。<br><img src="/笔记-疯狂Java讲义-第4章-面向对象（上）/%E5%BC%95%E7%94%A8%E5%8F%98%E9%87%8F%E6%8C%87%E5%90%91%E5%AE%9E%E9%99%85%E5%AF%B9%E8%B1%A1.png" alt="引用变量指向实际对象"></li>
 <li>this指向调用该方法的对象，一般用于让类中的一个方法调用其他方法或实例变量<br>static修饰的成员是属于类的，所以不能使用this。</li>
 </ul>
 <hr>
@@ -399,7 +399,7 @@
 <hr>
 <h3 id="深入构造器"><a href="#深入构造器" class="headerlink" title="深入构造器"></a>深入构造器</h3><p>构造器的作用是在创建实例时初始化实例，要注意不是构造器全部负责创建实例，在用new调用构造器时，系统先为实例分配空间，并默认初始化（int型为0，引用类型为null），然后才开始执行构造器中的初始化操作。</p>
 <ul>
-<li>构造器重载：构造器中也可以使用this<br><img src="/笔记-疯狂Java讲义-第4章-面向对象（上）/构造器重载.png" alt="构造器重载"></li>
+<li>构造器重载：构造器中也可以使用this<br><img src="/笔记-疯狂Java讲义-第4章-面向对象（上）/%E6%9E%84%E9%80%A0%E5%99%A8%E9%87%8D%E8%BD%BD.png" alt="构造器重载"></li>
 </ul>
 <hr>
 <h3 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h3><p>Java用extends关键字来继承，翻译成扩展更好，子类是特殊的父类，是对父类的扩展。Java没有多继承，即每个类只有一个直接父类（但可以有间接父类）。</p>
@@ -414,7 +414,7 @@
 <li>instanceof：前操作数是引用类型，后操作数是类/接口，用于判断前面的对象是否是后面的类或子类的实例</li>
 </ul>
 <hr>
-<h3 id="初始化块"><a href="#初始化块" class="headerlink" title="初始化块"></a>初始化块</h3><p>用{}括起来，先执行初始化块后执行构造器。<br><img src="/笔记-疯狂Java讲义-第4章-面向对象（上）/初始化块.png" alt="初始化块"><br><img src="/笔记-疯狂Java讲义-第4章-面向对象（上）/初始化块结果.png" alt="初始化块结果"></p>
+<h3 id="初始化块"><a href="#初始化块" class="headerlink" title="初始化块"></a>初始化块</h3><p>用{}括起来，先执行初始化块后执行构造器。<br><img src="/笔记-疯狂Java讲义-第4章-面向对象（上）/%E5%88%9D%E5%A7%8B%E5%8C%96%E5%9D%97.png" alt="初始化块"><br><img src="/笔记-疯狂Java讲义-第4章-面向对象（上）/%E5%88%9D%E5%A7%8B%E5%8C%96%E5%9D%97%E7%BB%93%E6%9E%9C.png" alt="初始化块结果"></p>
 
       
     </div>
@@ -445,8 +445,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/笔记-疯狂Java讲义-第3章-流程控制与数组/" rel="next" title="笔记-疯狂Java讲义-第3章 流程控制与数组">
-                <i class="fa fa-chevron-left"></i> 笔记-疯狂Java讲义-第3章 流程控制与数组
+              <a href="/笔记-疯狂Java讲义-第3章-流程控制与数组/" rel="next" title="笔记-疯狂Java讲义-第3章-流程控制与数组">
+                <i class="fa fa-chevron-left"></i> 笔记-疯狂Java讲义-第3章-流程控制与数组
               </a>
             
           </div>
@@ -455,8 +455,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/笔记-疯狂Java讲义-第5章-面向对象（下）/" rel="prev" title=" 笔记-疯狂Java讲义-第5章 面向对象（下）">
-                 笔记-疯狂Java讲义-第5章 面向对象（下） <i class="fa fa-chevron-right"></i>
+              <a href="/笔记-疯狂Java讲义-第5章-面向对象（下）/" rel="prev" title=" 笔记-疯狂Java讲义-第5章-面向对象（下）">
+                 笔记-疯狂Java讲义-第5章-面向对象（下） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

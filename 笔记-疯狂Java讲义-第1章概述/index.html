@@ -84,15 +84,15 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="笔记-疯狂Java讲义-第1章概述">
 <meta property="og:url" content="http://whisper912.github.io/笔记-疯狂Java讲义-第1章概述/index.html">
-<meta property="og:site_name" content="炸毛刺猬的个人BLOG">
+<meta property="og:site_name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
 <meta property="og:description" content="【写在前面】以下内容来自于本人对《疯狂Java讲义精粹》的摘录总结，主要摘录了自己觉得重要/不熟悉的内容，供自己参考学习，如有断章取义的地方还请包容。(❁´◡`❁)✲ﾟ  《疯狂Java讲义 精粹》 第1章 Java概述和环境Java发展史略(～￣▽￣)～ Java运行机制高级语言运行机制高级语言按程序执行方式可分为编译型和解释型。  编译型语言是指用专门的编译器， 针对特定平台将高级语言一次性翻">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第1章概述/笔记-Java疯狂讲义-第1章概述/1.1执行Java程序的两个步骤.png">
-<meta property="og:updated_time" content="2019-05-30T03:49:08.128Z">
+<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第1章概述/%E6%89%A7%E8%A1%8CJava%E7%A8%8B%E5%BA%8F%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%AD%A5%E9%AA%A4.png">
+<meta property="og:updated_time" content="2019-05-30T16:12:24.282Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记-疯狂Java讲义-第1章概述">
 <meta name="twitter:description" content="【写在前面】以下内容来自于本人对《疯狂Java讲义精粹》的摘录总结，主要摘录了自己觉得重要/不熟悉的内容，供自己参考学习，如有断章取义的地方还请包容。(❁´◡`❁)✲ﾟ  《疯狂Java讲义 精粹》 第1章 Java概述和环境Java发展史略(～￣▽￣)～ Java运行机制高级语言运行机制高级语言按程序执行方式可分为编译型和解释型。  编译型语言是指用专门的编译器， 针对特定平台将高级语言一次性翻">
-<meta name="twitter:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第1章概述/笔记-Java疯狂讲义-第1章概述/1.1执行Java程序的两个步骤.png">
+<meta name="twitter:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第1章概述/%E6%89%A7%E8%A1%8CJava%E7%A8%8B%E5%BA%8F%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%AD%A5%E9%AA%A4.png">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>笔记-疯狂Java讲义-第1章概述 | 炸毛刺猬的个人BLOG</title>
+  <title>笔记-疯狂Java讲义-第1章概述 | 炸毛刺猬 (゜-゜)つロ 干杯~</title>
   
 
 
@@ -158,7 +158,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">炸毛刺猬的个人BLOG</span>
+        <span class="site-title">炸毛刺猬 (゜-゜)つロ 干杯~</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -274,7 +274,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="炸毛刺猬的个人BLOG">
+      <meta itemprop="name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
     </span>
 
     
@@ -374,12 +374,16 @@
 <li>编译型语言是指用专门的编译器， 针对特定平台将高级语言<strong>一次性</strong>翻译成可被该平台硬件执行的机器码，并包装成该平台可识别的可执行程序。（如C，C++</li>
 <li>解释型语言是使用专门的解释器对源程序<strong>逐行</strong>解释成特定平台机器码并立即执行。（如Python， Ruby</li>
 </ul>
-<h4 id="Java程序运行机制和JVM（Java-Virtual-Machine"><a href="#Java程序运行机制和JVM（Java-Virtual-Machine" class="headerlink" title="Java程序运行机制和JVM（Java Virtual Machine)"></a>Java程序运行机制和JVM（Java Virtual Machine)</h4><p>Java程序执行必须经过先编译、后解释两个步骤，如图<br><img src="/笔记-疯狂Java讲义-第1章概述/笔记-Java疯狂讲义-第1章概述/1.1执行Java程序的两个步骤.png" alt="执行Java程序的两个步骤"><br>Java中负责解释执行字节码文件(*.class文件)的是Java虚拟机, 即JVM(Java Virtual Machine)。当使用Java编译器编译Java程序时，生成的是与平台无关的字节码，这些字节码不面向任何平台，只面向JVM。不同的平台上JVM都不同，但都提供了相同的接口。</p>
+<h4 id="Java程序运行机制和JVM（Java-Virtual-Machine"><a href="#Java程序运行机制和JVM（Java-Virtual-Machine" class="headerlink" title="Java程序运行机制和JVM（Java Virtual Machine)"></a>Java程序运行机制和JVM（Java Virtual Machine)</h4><p>Java程序执行必须经过先编译、后解释两个步骤，如图<br><img src="/笔记-疯狂Java讲义-第1章概述/%E6%89%A7%E8%A1%8CJava%E7%A8%8B%E5%BA%8F%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%AD%A5%E9%AA%A4.png" alt="执行Java程序的两个步骤"><br>Java中负责解释执行字节码文件(*.class文件)的是Java虚拟机, 即JVM(Java Virtual Machine)。当使用Java编译器编译Java程序时，生成的是与平台无关的字节码，这些字节码不面向任何平台，只面向JVM。不同的平台上JVM都不同，但都提供了相同的接口。</p>
 <p>JVM是个抽象的计算机, 和实际计算机一样，具有指令集并使用不同的存储区域。它负责执行指令，还要管理数据、内存和寄存器。Oracle指定的JVM统一标准，具体定义了JVM的如下细节：指令集、寄存器、类文件的格式、栈、垃圾回收堆和存储区。</p>
 <h4 id="配置Java开发环境"><a href="#配置Java开发环境" class="headerlink" title="配置Java开发环境"></a>配置Java开发环境</h4><p>JDK（Java SE Development Kit），即Java标准版开发包，是开发Java应用程序的发开包，提供了编译、运行Java程序的各种工具和资源，包括Java编译器、Java运行时环境（JRE，Java Runtime Environment）以及常用Java类库。JRE中包含了JVM。<br>安装过程略。</p>
-<h4 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h4><p>新建记事本文本文件（不要使用写字板，Windows可使用NotePad），文件名为<code>HelloWorld.java</code>，并输入如下代码，注意区分大小写<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h4><p>新建记事本文本文件（不要使用写字板，Windows可使用NotePad），文件名为<code>HelloWorld.java</code>，并输入如下代码，注意区分大小写</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>可在命令行中进入当前文件路径，输入<code>javac -d . HelloWorld.java</code>编译程序；输入<code>java HelloWorld</code>运行。</p>
-<h4 id="Java程序基本规则"><a href="#Java程序基本规则" class="headerlink" title="Java程序基本规则"></a>Java程序基本规则</h4><p>Java程序是纯粹的面向对象语言，因此Java程序必须以类（class）的形式存在，类是Java程序的最小程序单元。Java程序不允许可执行语句、函数独立存在，所有程序部分必须放在类定义里。<br>最简单的Java程序是一个包含空类定义的程序， 如<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="Java程序基本规则"><a href="#Java程序基本规则" class="headerlink" title="Java程序基本规则"></a>Java程序基本规则</h4><p>Java程序是纯粹的面向对象语言，因此Java程序必须以类（class）的形式存在，类是Java程序的最小程序单元。Java程序不允许可执行语句、函数独立存在，所有程序部分必须放在类定义里。<br>最简单的Java程序是一个包含空类定义的程序， 如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>这个类可编译但不能解释执行，因为Java解释器规定：若某个类能被解释器执行，则这个类必须包含main方法，且main方法必须用public static void来修饰，且main的参数必须是字符串数组类型（String[] args)。<br>【注意】：一个Java源文件可以包含多个类定义，但最多只能包含一个public类定义；如果Java源文件里包含public类定义，则该文件的文件名必须与这个public类的类名相同。</p>
 <h4 id="不建议新手使用IDE"><a href="#不建议新手使用IDE" class="headerlink" title="不建议新手使用IDE"></a>不建议新手使用IDE</h4>
       
@@ -421,8 +425,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/笔记-疯狂Java讲义-第2章-数据类型和运算符/" rel="prev" title="笔记-疯狂Java讲义-第2章 数据类型和运算符">
-                笔记-疯狂Java讲义-第2章 数据类型和运算符 <i class="fa fa-chevron-right"></i>
+              <a href="/笔记-疯狂Java讲义-第2章-数据类型和运算符/" rel="prev" title="笔记-疯狂Java讲义-第2章-数据类型和运算符">
+                笔记-疯狂Java讲义-第2章-数据类型和运算符 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>

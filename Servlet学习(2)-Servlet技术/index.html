@@ -79,32 +79,32 @@
 
 
 
-<meta name="description" content="Servlet APIServlet相关接口和类-Servlet技术/ServletAPI.png) Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。12345678910public void">
+<meta name="description" content="Servlet APIServlet相关接口和类 Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。 12345678910public void init(ServletConfig config">
 <meta name="keywords" content="Servlet API">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Servlet学习(2)-ServletAPI">
 <meta property="og:url" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/index.html">
-<meta property="og:site_name" content="炸毛刺猬的个人BLOG">
-<meta property="og:description" content="Servlet APIServlet相关接口和类-Servlet技术/ServletAPI.png) Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。12345678910public void">
+<meta property="og:site_name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
+<meta property="og:description" content="Servlet APIServlet相关接口和类 Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。 12345678910public void init(ServletConfig config">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
-<meta property="og:updated_time" content="2019-05-30T13:39:40.163Z">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/ServletAPI.png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/ServletRequest%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(1).png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/ServletRequest%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(2).png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/ServletRequest%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(3).png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/ServletResponse%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(1).png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/ServletResponse%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(2).png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/ServletConfig%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/GenericServlet%E7%9A%84%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/HttpServlet%E9%87%8D%E8%BD%BD%E7%9A%84service()%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/doXXX().png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/HttpServletRequest%E6%96%B0%E5%A2%9E%E7%9A%84%E6%96%B9%E6%B3%95(1).png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/HttpServletRequest%E6%96%B0%E5%A2%9E%E7%9A%84%E6%96%B9%E6%B3%95(2).png">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/HttpServletRequest%E6%96%B0%E5%A2%9E%E7%9A%84%E6%96%B9%E6%B3%95(3).png">
+<meta property="og:updated_time" content="2019-05-30T15:39:20.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Servlet学习(2)-ServletAPI">
-<meta name="twitter:description" content="Servlet APIServlet相关接口和类-Servlet技术/ServletAPI.png) Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。12345678910public void">
-<meta name="twitter:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta name="twitter:description" content="Servlet APIServlet相关接口和类 Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。 12345678910public void init(ServletConfig config">
+<meta name="twitter:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/ServletAPI.png">
 
 
 
@@ -140,7 +140,7 @@
 
 
 
-  <title>Servlet学习(2)-ServletAPI | 炸毛刺猬的个人BLOG</title>
+  <title>Servlet学习(2)-ServletAPI | 炸毛刺猬 (゜-゜)つロ 干杯~</title>
   
 
 
@@ -170,7 +170,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">炸毛刺猬的个人BLOG</span>
+        <span class="site-title">炸毛刺猬 (゜-゜)つロ 干杯~</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -286,7 +286,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="炸毛刺猬的个人BLOG">
+      <meta itemprop="name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
     </span>
 
     
@@ -378,26 +378,28 @@
       
 
       
-        <h3 id="Servlet-API"><a href="#Servlet-API" class="headerlink" title="Servlet API"></a>Servlet API</h3><p>Servlet相关接口和类<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletAPI.png">-Servlet技术/ServletAPI.png)</p>
+        <h3 id="Servlet-API"><a href="#Servlet-API" class="headerlink" title="Servlet API"></a>Servlet API</h3><p>Servlet相关接口和类<br><img src="/Servlet学习(2)-Servlet技术/ServletAPI.png" alt="ServletAPI.png"></p>
 <h4 id="Servlet接口"><a href="#Servlet接口" class="headerlink" title="Servlet接口"></a>Servlet接口</h4><ul>
 <li>Java Servlet不是独立的应用程序，没有main()方法。</li>
 <li>它不由用户或程序员直接调用，而是生存在容器中，由容器管理</li>
 </ul>
-<p>要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(ServletConfig config)</span> <span class="keyword">throws</span> ServletException</span></span><br><span class="line"><span class="function"><span class="comment">//init()：在Servlet实例化后，Servlet容器会调用init方法来初始化该对象。对于每个Servlet实例，init()只能被调用一次。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest req, ServletResponse res)</span> <span class="keyword">throws</span> ServletException</span></span><br><span class="line"><span class="function"><span class="comment">//service(): 容器调用servic()处理客户端发过来的请求。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//destroy()：当某个Servlet对象不再使用了，容器调用destroy()释放资源。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ServletConfig <span class="title">getServletConfig</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//返回init()传递给Servlet对象的ServletConfig对象。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> java.lang.String <span class="title">getServletInfo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//返回Servlet信息</span></span></span><br></pre></td></tr></table></figure></p>
+<p>要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(ServletConfig config)</span> <span class="keyword">throws</span> ServletException</span></span><br><span class="line"><span class="function"><span class="comment">//init()：在Servlet实例化后，Servlet容器会调用init方法来初始化该对象。对于每个Servlet实例，init()只能被调用一次。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest req, ServletResponse res)</span> <span class="keyword">throws</span> ServletException</span></span><br><span class="line"><span class="function"><span class="comment">//service(): 容器调用servic()处理客户端发过来的请求。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//destroy()：当某个Servlet对象不再使用了，容器调用destroy()释放资源。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ServletConfig <span class="title">getServletConfig</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//返回init()传递给Servlet对象的ServletConfig对象。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> java.lang.String <span class="title">getServletInfo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//返回Servlet信息</span></span></span><br></pre></td></tr></table></figure>
+
 <h4 id="ServletRequst和ServletResponse"><a href="#ServletRequst和ServletResponse" class="headerlink" title="ServletRequst和ServletResponse"></a>ServletRequst和ServletResponse</h4><p>因为Servlet是由Servlet容器来管理的，当客户端传来一个请求，Servlet容器会创建一个ServletRequest对象封装请求数据，同时创建一个ServletResponse对象封装响应数据。容器将这两个对象作为service()的参数传给Servlet，Servlet使用ServletRequest对象获取请求，利用ServletResponse对象发送响应。<br>ServletRequest和ServletResponse接口定义在javax.servlet包中。</p>
-<h5 id="ServletRequest接口中的常用方法"><a href="#ServletRequest接口中的常用方法" class="headerlink" title="ServletRequest接口中的常用方法"></a>ServletRequest接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletRequest常用方法(1).png">-Servlet技术/ServletRequest常用方法(1).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletRequest常用方法(2).png">-Servlet技术/ServletRequest常用方法(2).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletRequest常用方法(3).png">-Servlet技术/ServletRequest常用方法(3).png)</p>
-<h5 id="ServletResponse接口中的常用方法"><a href="#ServletResponse接口中的常用方法" class="headerlink" title="ServletResponse接口中的常用方法"></a>ServletResponse接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletResponse常用方法(1).png">-Servlet技术/ServletResponse常用方法(1).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletResponse常用方法(1).png">-Servlet技术/ServletResponse常用方法(2).png)</p>
+<h5 id="ServletRequest接口中的常用方法"><a href="#ServletRequest接口中的常用方法" class="headerlink" title="ServletRequest接口中的常用方法"></a>ServletRequest接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/ServletRequest%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(1).png" alt="ServletRequest常用方法(1).png"><br><img src="/Servlet学习(2)-Servlet技术/ServletRequest%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(2).png" alt="ServletRequest常用方法(2).png"><br><img src="/Servlet学习(2)-Servlet技术/ServletRequest%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(3).png" alt="ServletRequest常用方法(3).png"></p>
+<h5 id="ServletResponse接口中的常用方法"><a href="#ServletResponse接口中的常用方法" class="headerlink" title="ServletResponse接口中的常用方法"></a>ServletResponse接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/ServletResponse%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(1).png" alt="ServletResponse常用方法(1).png"><br><img src="/Servlet学习(2)-Servlet技术/ServletResponse%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95(2).png" alt="ServletResponse常用方法(1).png"></p>
 <h4 id="ServletConfig"><a href="#ServletConfig" class="headerlink" title="ServletConfig"></a>ServletConfig</h4><p>在javax.servlet包中还定义了ServletConfig接口。Servlet容器使用ServletConfig对象在初始化时向Servlet传递配置信息，一个Servlet只有一个ServletConfig对象。</p>
-<h5 id="ServletConfig接口中的常用方法"><a href="#ServletConfig接口中的常用方法" class="headerlink" title="ServletConfig接口中的常用方法"></a>ServletConfig接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletConfig方法.png">-Servlet技术/ServletConfig方法.png)</p>
-<h4 id="GenericServlet"><a href="#GenericServlet" class="headerlink" title="GenericServlet"></a>GenericServlet</h4><p>通过实现Servlet接口编写Servlet类非常麻烦，需要自己重写5个函数，为了简化编写，javax.servlet包中提供了抽象类GenericServlet，它给出了除了service()方法以外的其他方法的简单实现。GenericServlet定义了一个通用的、不依赖具体协议的Servlet，它实现了Servlet接口和ServletConfig接口。<br>此时，我们编写Servlet时只需要继承GenericServlet，实现service()方法就行了。<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="GenericServlet的方法.png">-Servlet技术/GenericServlet的方法.png)</p>
-<h4 id="HttpServlet"><a href="#HttpServlet" class="headerlink" title="HttpServlet"></a>HttpServlet</h4><p>为了快速开发基于http的Servlet类，javax.servlet.http包中提供了一个抽象类HttpServlet，它继承自GenericServlet。<br>HttpServlet提供了两个重载的service()方法：<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="HttpServlet重载的service()方法.png">-Servlet技术/HttpServlet重载的service()方法.png)<br>针对HTTP1.1的7种请求方法GET, POST, HEAD, PUT, DELETE, TRACE和OPTION，HttpServlet提供7个方法处理：<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="doXXX().png">-Servlet技术/doXXX().png)<br>这7个方法的参数都是HttpServletRequest和HttpServletResponse类型，与第二个重载的service()方法相同。当容器收到一个针对HttpServlet的请求时，方法调用顺序如下：</p>
+<h5 id="ServletConfig接口中的常用方法"><a href="#ServletConfig接口中的常用方法" class="headerlink" title="ServletConfig接口中的常用方法"></a>ServletConfig接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/ServletConfig%E6%96%B9%E6%B3%95.png" alt="ServletConfig方法.png"></p>
+<h4 id="GenericServlet"><a href="#GenericServlet" class="headerlink" title="GenericServlet"></a>GenericServlet</h4><p>通过实现Servlet接口编写Servlet类非常麻烦，需要自己重写5个函数，为了简化编写，javax.servlet包中提供了抽象类GenericServlet，它给出了除了service()方法以外的其他方法的简单实现。GenericServlet定义了一个通用的、不依赖具体协议的Servlet，它实现了Servlet接口和ServletConfig接口。<br>此时，我们编写Servlet时只需要继承GenericServlet，实现service()方法就行了。<br><img src="/Servlet学习(2)-Servlet技术/GenericServlet%E7%9A%84%E6%96%B9%E6%B3%95.png" alt="GenericServlet的方法.png"></p>
+<h4 id="HttpServlet"><a href="#HttpServlet" class="headerlink" title="HttpServlet"></a>HttpServlet</h4><p>为了快速开发基于http的Servlet类，javax.servlet.http包中提供了一个抽象类HttpServlet，它继承自GenericServlet。<br>HttpServlet提供了两个重载的service()方法：<br><img src="/Servlet学习(2)-Servlet技术/HttpServlet%E9%87%8D%E8%BD%BD%E7%9A%84service()%E6%96%B9%E6%B3%95.png" alt="HttpServlet重载的service()方法.png"><br>针对HTTP1.1的7种请求方法GET, POST, HEAD, PUT, DELETE, TRACE和OPTION，HttpServlet提供7个方法处理：<br><img src="/Servlet学习(2)-Servlet技术/doXXX().png" alt="doXXX().png"><br>这7个方法的参数都是HttpServletRequest和HttpServletResponse类型，与第二个重载的service()方法相同。当容器收到一个针对HttpServlet的请求时，方法调用顺序如下：</p>
 <ol>
 <li>调用继承过来的public service()方法</li>
 <li>在public service()方法中，将ServletRequset和ServletResponse强转为HttpServletRequest和HttpServletResponse类型，并将转换后的参数作为重载的protected service()方法的参数传入，调用protected service()方法。</li>
 <li>在protected service()方法中，先调用HttpServletRequest对象的getMethod()方法，获取HTTP请求的类型，根据不同类型调用不同的doXxx()方法。<br>因此，在编写HttpServlet派生类时只需要重写相应的doXxx()方法，不用重写service()。</li>
 </ol>
 <h4 id="HttpServletRequest和HttpServletResponse"><a href="#HttpServletRequest和HttpServletResponse" class="headerlink" title="HttpServletRequest和HttpServletResponse"></a>HttpServletRequest和HttpServletResponse</h4><p>在javax.servlet.http包中，定义了HttpServletRequest和HttpServletResponse这两个接口。他们分别继承自ServletRequest和ServletResponse接口。</p>
-<h5 id="HttpServletRequest接口中新增的方法"><a href="#HttpServletRequest接口中新增的方法" class="headerlink" title="HttpServletRequest接口中新增的方法"></a>HttpServletRequest接口中新增的方法</h5><p><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="HttpServletRequest新增的方法(1).png">-Servlet技术/HttpServletRequest新增的方法(1).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="HttpServletRequest新增的方法(2).png">-Servlet技术/HttpServletRequest新增的方法(2).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="HttpServletRequest新增的方法(3).png">-Servlet技术/HttpServletRequest新增的方法(3).png)</p>
+<h5 id="HttpServletRequest接口中新增的方法"><a href="#HttpServletRequest接口中新增的方法" class="headerlink" title="HttpServletRequest接口中新增的方法"></a>HttpServletRequest接口中新增的方法</h5><p><img src="/Servlet学习(2)-Servlet技术/HttpServletRequest%E6%96%B0%E5%A2%9E%E7%9A%84%E6%96%B9%E6%B3%95(1).png" alt="HttpServletRequest新增的方法(1).png"><br><img src="/Servlet学习(2)-Servlet技术/HttpServletRequest%E6%96%B0%E5%A2%9E%E7%9A%84%E6%96%B9%E6%B3%95(2).png" alt="HttpServletRequest新增的方法(2).png"><br><img src="/Servlet学习(2)-Servlet技术/HttpServletRequest%E6%96%B0%E5%A2%9E%E7%9A%84%E6%96%B9%E6%B3%95(3).png" alt="HttpServletRequest新增的方法(3).png"></p>
 <h5 id="HttpServletResponse新增了一组静态常量"><a href="#HttpServletResponse新增了一组静态常量" class="headerlink" title="HttpServletResponse新增了一组静态常量"></a>HttpServletResponse新增了一组静态常量</h5><p>表示HTTP错误代码，对应于HTTP1.1错误代码，具体可以查看HttpServletResponse接口的API文档。<br><a href="https://javaee.github.io/javaee-spec/javadocs/" target="_blank" rel="noopener">java ee文档地址</a><br>在左上角选对应的包，左下角选择接口或类，就可以在右边查看相应API文档介绍</p>
 
       
