@@ -98,7 +98,7 @@
 <meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第6章-Java基础类库/set延时.png">
 <meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第6章-Java基础类库/DateTimeFormatter1.png">
 <meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第6章-Java基础类库/DateTimeFormatter2.png">
-<meta property="og:updated_time" content="2019-03-19T13:00:51.296Z">
+<meta property="og:updated_time" content="2019-05-30T03:54:09.766Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content=" 笔记-疯狂Java讲义-第6章 Java基础类库">
 <meta name="twitter:description" content="与用户互动 main函数参数main函数的参数是String[] args, 可以在运行时输入参数，每个参数之间用空格隔开。在命令行运行时，假如文件名为Test.java，参数设定为”LSK”和”dsz”，运行该程序的命令为java Test LSK dsz若使用eclipse，可以运行时点击右键Run as-&amp;gt;Run Configurations，在arguments中输入参数，如下图若参">
@@ -392,38 +392,38 @@
 <hr>
 <h3 id="系统相关"><a href="#系统相关" class="headerlink" title="系统相关"></a>系统相关</h3><ul>
 <li><p>System类<br>System类代表Java程序的运行平台，System类提供了标准输入、输出、错误输出的类变量，还有一些环境变量和系统属性的访问。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">System.getenv() //获取全部环境变量</span><br><span class="line">System.getenc(&quot;JAVA_HOME&quot;)  //获取指定环境变量的值</span><br><span class="line">System.getProperties()  //获取所有系统属性</span><br><span class="line">System.getProperty(&quot;os.name&quot;)  //获取指定系统属性</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">System.getenv() <span class="comment">//获取全部环境变量</span></span><br><span class="line">System.getenc(<span class="string">"JAVA_HOME"</span>)  <span class="comment">//获取指定环境变量的值</span></span><br><span class="line">System.getProperties()  <span class="comment">//获取所有系统属性</span></span><br><span class="line">System.getProperty(<span class="string">"os.name"</span>)  <span class="comment">//获取指定系统属性</span></span><br></pre></td></tr></table></figure>
 <p>访问时间</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.currentTimeMillis()  //获取1970-1-1到现在的毫秒数</span><br><span class="line">System.namoTime()  //纳秒数，大多数操作系统不支持</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.currentTimeMillis()  <span class="comment">//获取1970-1-1到现在的毫秒数</span></span><br><span class="line">System.namoTime()  <span class="comment">//纳秒数，大多数操作系统不支持</span></span><br></pre></td></tr></table></figure>
 <p>返回对象的精确hash值</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.identityHashCode(Object o) //根据对象的地址算出的hash值，若两个对象identityHashCode值相等，他们就是一个对象</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.identityHashCode(Object o) <span class="comment">//根据对象的地址算出的hash值，若两个对象identityHashCode值相等，他们就是一个对象</span></span><br></pre></td></tr></table></figure>
 <p>System类还提供了gc()、runFinalization()</p>
 </li>
 <li><p>Runtime类<br>Runtime类也提供了gc()和runFinalization()<br>Runtime是java运行时环境，每个Java程序有一个与之对应的Runtime实例，可以通过getRunTime()获取对象，可以访问JVM相关信息</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Runtime rt = RunTime.getTunTime();</span><br><span class="line">rt.availableProcessors();  //处理器数量</span><br><span class="line">rt.freeMemory(); //空闲内存数</span><br><span class="line">rt.totalMemory();  //总内存数</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Runtime rt = RunTime.getTunTime();</span><br><span class="line">rt.availableProcessors();  <span class="comment">//处理器数量</span></span><br><span class="line">rt.freeMemory(); <span class="comment">//空闲内存数</span></span><br><span class="line">rt.totalMemory();  <span class="comment">//总内存数</span></span><br></pre></td></tr></table></figure>
 <p>Runtime类可以启动一个进程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Runtime rt = RunTime.getTunTime();</span><br><span class="line">rt.exec(&quot;notepad.exe&quot;);   //打开记事本</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Runtime rt = RunTime.getTunTime();</span><br><span class="line">rt.exec(<span class="string">"notepad.exe"</span>);   <span class="comment">//打开记事本</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
 <h3 id="常用类"><a href="#常用类" class="headerlink" title="常用类"></a>常用类</h3><ul>
 <li><p>Object<br>Object是所有类的父类，（enum类的直接父类是java.lang.enum，但java.lang.enum继承Object，所以enum的父类也是Object）。<br>Object类有如下方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">boolean equals(Object o);  //判断两个对象是否同一，和“==”作用相同，但很多类都重写了equals</span><br><span class="line">protected void finalize();  //当系统中没有引用指向该变量，垃圾回收器调用该方法清理该对象的资源</span><br><span class="line">Class&lt;?&gt; getClass();  //返回该对象的运行时类</span><br><span class="line">int hashCode();  //根据对象地址计算hashCode，与System.identityHashCode值相同，但很多类重写了hashCode方法。</span><br><span class="line">String toString();  //当系统使用System.out.println()输出一个对象或把对象和字符串连接时，系统自动调用该方法，返回`运行时类名@hashCode值`，但很多类也重写了该方法</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span></span>;  <span class="comment">//判断两个对象是否同一，和“==”作用相同，但很多类都重写了equals</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">finalize</span><span class="params">()</span></span>;  <span class="comment">//当系统中没有引用指向该变量，垃圾回收器调用该方法清理该对象的资源</span></span><br><span class="line">Class&lt;?&gt; getClass();  <span class="comment">//返回该对象的运行时类</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span></span>;  <span class="comment">//根据对象地址计算hashCode，与System.identityHashCode值相同，但很多类重写了hashCode方法。</span></span><br><span class="line"><span class="function">String <span class="title">toString</span><span class="params">()</span></span>;  <span class="comment">//当系统使用System.out.println()输出一个对象或把对象和字符串连接时，系统自动调用该方法，返回`运行时类名@hashCode值`，但很多类也重写了该方法</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>Object的clone方法<br><code>void clone(Object o)</code>，实现自我克隆，得到一个该对象的副本，需要注意这只是一种浅复制，只复制成员变量的值，不会对引用类型的成员变量所指的对象克隆，如图所示：<br><img src="/笔记-疯狂Java讲义-第6章-Java基础类库/clone代码.png" alt="clone代码"><br><img src="/笔记-疯狂Java讲义-第6章-Java基础类库/Object克隆机制.png" alt="Object克隆机制"></li>
 </ul>
 </li>
 <li><p>Objects<br>检验空指针异常，如果一个引用为空，调用他的toString()会引发NullPointException，可以使用<code>Objects.toString(Object o)</code>，此时若o为空，返回字符串”null”</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Objects.hashCode()  //null对象输出0</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Objects.hashCode()  <span class="comment">//null对象输出0</span></span><br></pre></td></tr></table></figure>
 <p>使用Objects.requireNonNull()方法检验参数是否为null，如下<br><img src="/笔记-疯狂Java讲义-第6章-Java基础类库/Objects.requireNonNull.png" alt="Objects.requireNonNull"></p>
 </li>
 <li><p>String、StringBuffer、StringBuilder<br>String是不可变类，StringBuffer和StringBuilder功能相似，但StringBuffer是线程安全的，StringBuilder因为没有线程安全所以速度更快。<br>String有一些重要的方法，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">String(bytes[] bytes, Charset charset)  //使用指定字符集解码成字符串</span><br><span class="line">String(bytes[] bytes, int offset, int length, String charsetName) //从bytes数组offset位开始，长度为length的子数组，以charsetName的编码方式，建立字符串</span><br><span class="line">String(char[] val, int offset, int count) //从字符数组offset位开始，创建长度为count的字符串</span><br><span class="line">int lenght()</span><br><span class="line">char charAt(int index) //返回下标为index的字符</span><br><span class="line"></span><br><span class="line">int indexOf(char ch)  </span><br><span class="line">String indexOf(String str)</span><br><span class="line">int lastIndexOf(char ch)</span><br><span class="line"></span><br><span class="line">String concat(String s) //将String对象与s拼接在一起，和“+”功能相同</span><br><span class="line">boolean equals(String s)  //字符串序列相同则返回true</span><br><span class="line">bytes[] getBytes()  </span><br><span class="line">void getChars(int srcBegin, int lenth, Char[] dst, int dstBegin)  //将原对象src从srcBegin开始，长度为length位，赋值给dst数组，从dstBegin开始复制</span><br><span class="line"></span><br><span class="line"> String replace(char old, char new)  //替换第一个</span><br><span class="line"> String subString(int start, int end)</span><br></pre></td></tr></table></figure>
+<figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">String</span>(bytes[] bytes, Charset charset)  <span class="comment">//使用指定字符集解码成字符串</span></span><br><span class="line"><span class="keyword">String</span>(bytes[] bytes, <span class="built_in">int</span> offset, <span class="built_in">int</span> length, <span class="keyword">String</span> charsetName) <span class="comment">//从bytes数组offset位开始，长度为length的子数组，以charsetName的编码方式，建立字符串</span></span><br><span class="line"><span class="keyword">String</span>(<span class="built_in">char</span>[] val, <span class="built_in">int</span> offset, <span class="built_in">int</span> count) <span class="comment">//从字符数组offset位开始，创建长度为count的字符串</span></span><br><span class="line"><span class="built_in">int</span> lenght()</span><br><span class="line"><span class="built_in">char</span> charAt(<span class="built_in">int</span> index) <span class="comment">//返回下标为index的字符</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">int</span> indexOf(<span class="built_in">char</span> ch)  </span><br><span class="line"><span class="keyword">String</span> indexOf(<span class="keyword">String</span> <span class="built_in">str</span>)</span><br><span class="line"><span class="built_in">int</span> lastIndexOf(<span class="built_in">char</span> ch)</span><br><span class="line"></span><br><span class="line"><span class="keyword">String</span> <span class="built_in">concat</span>(<span class="keyword">String</span> s) <span class="comment">//将String对象与s拼接在一起，和“+”功能相同</span></span><br><span class="line"><span class="built_in">boolean</span> equals(<span class="keyword">String</span> s)  <span class="comment">//字符串序列相同则返回true</span></span><br><span class="line">bytes[] getBytes()  </span><br><span class="line"><span class="keyword">void</span> getChars(<span class="built_in">int</span> srcBegin, <span class="built_in">int</span> lenth, Char[] dst, <span class="built_in">int</span> dstBegin)  <span class="comment">//将原对象src从srcBegin开始，长度为length位，赋值给dst数组，从dstBegin开始复制</span></span><br><span class="line"></span><br><span class="line"> <span class="keyword">String</span> replace(<span class="built_in">char</span> old, <span class="built_in">char</span> <span class="keyword">new</span>)  <span class="comment">//替换第一个</span></span><br><span class="line"> <span class="keyword">String</span> subString(<span class="built_in">int</span> start, <span class="built_in">int</span> end)</span><br></pre></td></tr></table></figure>
 <p>因为String类对象不可变，所以会额外产生很多临时变量，使用StringBuilder或StringBuffer可以避免，StringBuilder和StringBuffer有两个属性length和capacity，以下是StringBuilder的方法，StringBuffer一样<br><img src="/笔记-疯狂Java讲义-第6章-Java基础类库/StringBuilder.png" alt="StringBuilder"></p>
 </li>
 <li>Math<br>不写了(；д；)</li>
 <li><p>Random和ThreadLocalRandom</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Random r = new Random()  //参数是种子，一样的种子生成的随机数相同，一般使用System.currentTimeMillis做种子</span><br><span class="line">r.nextInt()  //生成随机int</span><br><span class="line">r.nextInt(26)  //0~26</span><br><span class="line">r.nextDouble()  //0.0~1.0</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Random r = <span class="keyword">new</span> Random()  <span class="comment">//参数是种子，一样的种子生成的随机数相同，一般使用System.currentTimeMillis做种子</span></span><br><span class="line">r.nextInt()  <span class="comment">//生成随机int</span></span><br><span class="line">r.nextInt(<span class="number">26</span>)  <span class="comment">//0~26</span></span><br><span class="line">r.nextDouble()  <span class="comment">//0.0~1.0</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>BigDecimal<br><img src="/笔记-疯狂Java讲义-第6章-Java基础类库/BigDecimal.png" alt="BigDecimal"></p>
 </li>
@@ -434,7 +434,7 @@
 <ul>
 <li>add、roll的区别<br>add会进位，roll不进位，如果下一级字段需要改变，会自动修正到改变最小的数。<br><img src="/笔记-疯狂Java讲义-第6章-Java基础类库/add、roll.png" alt="add、roll"></li>
 <li><p>容错<br>使用set设置时，有可能出现不合法的数值，自动修正。可以使用<code>Calendar.setLenient(false)</code>关闭容错</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Calendar c = Calendar.getInstance()</span><br><span class="line">c.set(MONTH,13);  //结果是YEAR+1，MONTH字段是1（2月）</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Calendar c = Calendar.getInstance()</span><br><span class="line">c.set(MONTH,<span class="number">13</span>);  <span class="comment">//结果是YEAR+1，MONTH字段是1（2月）</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>set延时<br><img src="/笔记-疯狂Java讲义-第6章-Java基础类库/set延时.png" alt="set延时"></p>
 </li>
@@ -572,7 +572,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -583,7 +583,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -594,7 +594,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

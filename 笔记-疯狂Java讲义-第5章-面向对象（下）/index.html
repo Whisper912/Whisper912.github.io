@@ -79,22 +79,22 @@
 
 
 
-<meta name="description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
+<meta name="description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&quot;1223&quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&quot;123&quot;);System.out.println(i);">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content=" 笔记-疯狂Java讲义-第5章 面向对象（下）">
 <meta property="og:url" content="http://whisper912.github.io/笔记-疯狂Java讲义-第5章-面向对象（下）/index.html">
 <meta property="og:site_name" content="炸毛刺猬的个人BLOG">
-<meta property="og:description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
+<meta property="og:description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&quot;1223&quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&quot;123&quot;);System.out.println(i);">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第5章-面向对象（下）/非静态内部类.png">
 <meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第5章-面向对象（下）/内部类存储外部类对象的引用.png">
 <meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第5章-面向对象（下）/匿名内部类.png">
 <meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第5章-面向对象（下）/Lambda.png">
-<meta property="og:updated_time" content="2019-03-19T13:21:11.804Z">
+<meta property="og:updated_time" content="2019-05-30T03:51:37.610Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content=" 笔记-疯狂Java讲义-第5章 面向对象（下）">
-<meta name="twitter:description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&amp;quot;1223&amp;quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&amp;quot;123&amp;quot;);Syst">
+<meta name="twitter:description" content="Java8增强的包装类 包装类和字符串相互转换  包装类的parseXxx(String s)  12Integer i=Integer.parseInt(&quot;1223&quot;);System.out.println(i);   //输出1223  包装类的Xxx(String s)构造器  12Integer i = new Integer(&quot;123&quot;);System.out.println(i);">
 <meta name="twitter:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第5章-面向对象（下）/非静态内部类.png">
 
 
@@ -373,23 +373,23 @@
 <li><p>包装类和字符串相互转换</p>
 <ul>
 <li><p>包装类的parseXxx(String s)</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i=Integer.parseInt(&quot;1223&quot;);</span><br><span class="line">System.out.println(i);   //输出1223</span><br></pre></td></tr></table></figure>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i=Integer.parseInt(<span class="string">"1223"</span>);</span><br><span class="line">System.out.println(i);   <span class="comment">//输出1223</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>包装类的Xxx(String s)构造器</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i = new Integer(&quot;123&quot;);</span><br><span class="line">System.out.println(i);   //输出123</span><br></pre></td></tr></table></figure>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Integer i = <span class="keyword">new</span> Integer(<span class="string">"123"</span>);</span><br><span class="line">System.out.println(i);   <span class="comment">//输出123</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>String类的多个重载valueOf(), 将boolean、int、double、float、Object、char类型的参数转变为String类型</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String s=String.valueOf(2.4);  //将double类型的2.4转化成String</span><br></pre></td></tr></table></figure>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String s=String.valueOf(<span class="number">2.4</span>);  <span class="comment">//将double类型的2.4转化成String</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 <li><p>包装类的compare(xxx val1, xxx val2) </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Integer.compare(int a, int b)   //a&gt;b则返回1，a&lt;b返回-1，相等返回0</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Integer.compare(<span class="keyword">int</span> a, <span class="keyword">int</span> b)   <span class="comment">//a&gt;b则返回1，a&lt;b返回-1，相等返回0</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
 <h3 id="对象的比较"><a href="#对象的比较" class="headerlink" title="对象的比较"></a>对象的比较</h3><ul>
-<li>equals<br>String重写了Object的equals方法，当两个字符串的内容相同时，就返回true。<br>而“==”是比较值是否相等。c和cc里存的是实例的地址，地址不相等。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String c=&quot;abc&quot;;</span><br><span class="line">String cc=new String(&quot;abc&quot;);</span><br><span class="line">System.out.println(c.equals(cc));   //true</span><br><span class="line">System.out.println(c==cc);          //false</span><br></pre></td></tr></table></figure>
+<li>equals<br>String重写了Object的equals方法，当两个字符串的内容相同时，就返回true。<br>而“==”是比较值是否相等。c和cc里存的是实例的地址，地址不相等。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String c=<span class="string">"abc"</span>;</span><br><span class="line">String cc=<span class="keyword">new</span> String(<span class="string">"abc"</span>);</span><br><span class="line">System.out.println(c.equals(cc));   <span class="comment">//true</span></span><br><span class="line">System.out.println(c==cc);          <span class="comment">//false</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
@@ -415,7 +415,7 @@
 <h3 id="Java8改进的接口"><a href="#Java8改进的接口" class="headerlink" title="Java8改进的接口"></a>Java8改进的接口</h3><p>接口定义的是一种规范，所以没有构造器和初始化块，接口里所有成员都是public权限，接口里的成员变量只能是静态常量（public static final），成员方法只能是抽象方法或者默认方法（default）</p>
 <ul>
 <li>接口的继承<br>可以继承多个接口</li>
-<li>接口的实现 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface Product&#123;&#125;</span><br><span class="line">class Printer implements Product &#123;&#125;</span><br><span class="line"></span><br><span class="line">Product p = new Printer();</span><br></pre></td></tr></table></figure>
+<li>接口的实现 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">Product</span></span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Printer</span> <span class="keyword">implements</span> <span class="title">Product</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">Product p = <span class="keyword">new</span> Printer();</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <hr>
@@ -430,10 +430,10 @@
 </li>
 <li><p>静态内部类<br>静态内部类只能访问外部类的静态成员，静态内部类的实例也不能访问外部类的实例成员</p>
 </li>
-<li>使用内部类<br>使用非静态内部类时：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Out.In in = new Out().in();  //非静态内部类的构造器必须由外部类的对象调用</span><br></pre></td></tr></table></figure>
+<li>使用内部类<br>使用非静态内部类时：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Out.In in = <span class="keyword">new</span> Out().in();  <span class="comment">//非静态内部类的构造器必须由外部类的对象调用</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>使用静态内部类“<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Out.In in = new Out.In();</span><br></pre></td></tr></table></figure></p>
+<p>使用静态内部类“<br>    <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Out</span>.<span class="keyword">In</span> <span class="keyword">in</span> = <span class="keyword">new</span> <span class="keyword">Out</span>.<span class="keyword">In</span>();</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>Java8改进的匿名内部类<br>创建匿名内部类时会创建一个匿名内部类的实例，这个类的定义会立即消失，不能重复使用。<br>匿名内部类必须继承一个父类或者实现一个接口。<br><img src="/笔记-疯狂Java讲义-第5章-面向对象（下）/匿名内部类.png" alt="匿名内部类"></li>
 </ul>
@@ -445,7 +445,7 @@
 <li>匿名内部类实现的抽象方法体中允许调用接口中的默认方法；Lambda不行<br><img src="/笔记-疯狂Java讲义-第5章-面向对象（下）/Lambda.png" alt="Lambda"></li>
 </ol>
 <hr>
-<h3 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h3><p>默认继承java.lang.enum<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">enum Season &#123;</span><br><span class="line">    SPRING, SUMMER, FALL, WINTER</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h3><p>默认继承java.lang.enum<br>    <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Season</span> &#123;</span></span><br><span class="line">    SPRING, SUMMER, FALL, WINTER</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>使用时<code>Season.SPRING</code></p>
 
       
@@ -571,7 +571,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -582,7 +582,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -593,7 +593,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

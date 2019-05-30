@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="炸毛刺猬的个人BLOG">
 <meta property="og:description" content="题目给一个数组，返回它的最大连续子序列的和。（ 例如{6,-3,-2,7,-15,1,2,2},连续子向量的最大和为8(从第0个开始,到第3个为止)。） 解法以下解法来源https://www.nowcoder.com/profile/844008/codeBookDetail?submissionId=1519441  @小新没有蜡笔~ 的解法使用动态规划F（i）：以array[i]为末尾元素的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-21T07:40:53.002Z">
+<meta property="og:updated_time" content="2019-05-30T03:58:03.787Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法-动态规划-最大子数组.md">
 <meta name="twitter:description" content="题目给一个数组，返回它的最大连续子序列的和。（ 例如{6,-3,-2,7,-15,1,2,2},连续子向量的最大和为8(从第0个开始,到第3个为止)。） 解法以下解法来源https://www.nowcoder.com/profile/844008/codeBookDetail?submissionId=1519441  @小新没有蜡笔~ 的解法使用动态规划F（i）：以array[i]为末尾元素的">
@@ -367,7 +367,7 @@
         <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给一个数组，返回它的最大连续子序列的和。（ 例如{6,-3,-2,7,-15,1,2,2},连续子向量的最大和为8(从第0个开始,到第3个为止)。）</p>
 <h3 id="解法"><a href="#解法" class="headerlink" title="解法"></a>解法</h3><p>以下解法来源<a href="https://www.nowcoder.com/profile/844008/codeBookDetail?submissionId=1519441" target="_blank" rel="noopener">https://www.nowcoder.com/profile/844008/codeBookDetail?submissionId=1519441</a>  @小新没有蜡笔~ 的解法<br>使用动态规划<br>F（i）：以array[i]为末尾元素的子数组的和的最大值，子数组的元素的相对位置不变<br>F（i）=max（F（i-1）+array[i] ， array[i]）<br>res：所有子数组的和的最大值<br>res=max（res，F（i））</p>
 <p>如数组[6, -3, -2, 7, -15, 1, 2, 2]<br>初始状态：<br>    F（0）=6<br>    res=6<br>i=1：<br>    F（1）=max（F（0）-3，-3）=max（6-3，3）=3<br>    res=max（F（1），res）=max（3，6）=6<br>i=2：<br>    F（2）=max（F（1）-2，-2）=max（3-2，-2）=1<br>    res=max（F（2），res）=max（1，6）=6<br>i=3：<br>    F（3）=max（F（2）+7，7）=max（1+7，7）=8<br>    res=max（F（3），res）=max（8，6）=8<br>i=4：<br>    F（4）=max（F（3）-15，-15）=max（8-15，-15）=-7<br>    res=max（F（4），res）=max（-7，8）=8<br>以此类推<br>最终res的值为8</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public static int FindGreatestSumOfSubArray(int[] array) &#123;</span><br><span class="line">    if(array==null)</span><br><span class="line">        return 0;</span><br><span class="line">    int sum=array[0];</span><br><span class="line">    int maxi=array[0]; //以array[i]为末尾元素的子数组的和的最大值</span><br><span class="line">    for(int i=1; i&lt;array.length; i++) &#123;</span><br><span class="line">        maxi=array[i]&gt;maxi+array[i] ? array[i] : maxi+array[i];</span><br><span class="line">        sum=sum&gt;maxi ? sum:maxi;</span><br><span class="line">    &#125;</span><br><span class="line">    return sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">FindGreatestSumOfSubArray</span><span class="params">(<span class="keyword">int</span>[] array)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(array==<span class="keyword">null</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> sum=array[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">int</span> maxi=array[<span class="number">0</span>]; <span class="comment">//以array[i]为末尾元素的子数组的和的最大值</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;array.length; i++) &#123;</span><br><span class="line">        maxi=array[i]&gt;maxi+array[i] ? array[i] : maxi+array[i];</span><br><span class="line">        sum=sum&gt;maxi ? sum:maxi;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -407,10 +407,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/request和response/" rel="prev" title="request和response">
-                request和response <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -492,7 +488,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -503,7 +499,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -514,7 +510,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
