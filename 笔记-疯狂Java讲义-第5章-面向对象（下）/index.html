@@ -433,7 +433,7 @@
 <li>使用内部类<br>使用非静态内部类时：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Out.In in = <span class="keyword">new</span> Out().in();  <span class="comment">//非静态内部类的构造器必须由外部类的对象调用</span></span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>使用静态内部类“<br>    <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Out</span>.<span class="keyword">In</span> <span class="keyword">in</span> = <span class="keyword">new</span> <span class="keyword">Out</span>.<span class="keyword">In</span>();</span><br></pre></td></tr></table></figure></p>
+<p>使用静态内部类“<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Out.In in = new Out.In();</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li>Java8改进的匿名内部类<br>创建匿名内部类时会创建一个匿名内部类的实例，这个类的定义会立即消失，不能重复使用。<br>匿名内部类必须继承一个父类或者实现一个接口。<br><img src="/笔记-疯狂Java讲义-第5章-面向对象（下）/匿名内部类.png" alt="匿名内部类"></li>
 </ul>
@@ -445,7 +445,7 @@
 <li>匿名内部类实现的抽象方法体中允许调用接口中的默认方法；Lambda不行<br><img src="/笔记-疯狂Java讲义-第5章-面向对象（下）/Lambda.png" alt="Lambda"></li>
 </ol>
 <hr>
-<h3 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h3><p>默认继承java.lang.enum<br>    <figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Season</span> &#123;</span></span><br><span class="line">    SPRING, SUMMER, FALL, WINTER</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h3><p>默认继承java.lang.enum<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">enum Season &#123;</span><br><span class="line">    SPRING, SUMMER, FALL, WINTER</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>使用时<code>Season.SPRING</code></p>
 
       
@@ -571,7 +571,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

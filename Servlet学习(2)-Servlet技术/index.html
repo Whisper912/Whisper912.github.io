@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Java,">
+  <meta name="keywords" content="Servlet API,">
 
 
 
@@ -79,31 +79,32 @@
 
 
 
-<meta name="description" content="Java是强类型语言。强类型包含两方面含义：  所有变量必须先声明后使用。 指定类型变量只能接受类型与之匹配的值。  注释Java有三种类型的注释：  单行注释。//这是单行注释 多行注释。 12/*这是多行注释这是多行注释*/  文档注释。  12345/***这里是文档注释*@author*@version*/   文档注释是用于生成API文档的，API文档是用于说明类、方法、成员变量的功能。">
-<meta name="keywords" content="Java">
+<meta name="description" content="Servlet APIServlet相关接口和类-Servlet技术/ServletAPI.png) Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。12345678910public void">
+<meta name="keywords" content="Servlet API">
 <meta property="og:type" content="article">
-<meta property="og:title" content="笔记-疯狂Java讲义-第2章 数据类型和运算符">
-<meta property="og:url" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/index.html">
+<meta property="og:title" content="Servlet学习(2)-ServletAPI">
+<meta property="og:url" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/index.html">
 <meta property="og:site_name" content="炸毛刺猬的个人BLOG">
-<meta property="og:description" content="Java是强类型语言。强类型包含两方面含义：  所有变量必须先声明后使用。 指定类型变量只能接受类型与之匹配的值。  注释Java有三种类型的注释：  单行注释。//这是单行注释 多行注释。 12/*这是多行注释这是多行注释*/  文档注释。  12345/***这里是文档注释*@author*@version*/   文档注释是用于生成API文档的，API文档是用于说明类、方法、成员变量的功能。">
+<meta property="og:description" content="Servlet APIServlet相关接口和类-Servlet技术/ServletAPI.png) Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。12345678910public void">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/java关键字.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/java基本类型.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/整数赋值.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/整数赋值举例.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/整数加L举例.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/java浮点数.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/java特殊浮点值.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/自动强制类型转换.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/parseXxx.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/算数表达式的自动提升.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/位运算符.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/移位运算规则.png">
-<meta property="og:updated_time" content="2019-05-30T03:48:52.591Z">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
+<meta property="og:updated_time" content="2019-05-30T13:39:40.163Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="笔记-疯狂Java讲义-第2章 数据类型和运算符">
-<meta name="twitter:description" content="Java是强类型语言。强类型包含两方面含义：  所有变量必须先声明后使用。 指定类型变量只能接受类型与之匹配的值。  注释Java有三种类型的注释：  单行注释。//这是单行注释 多行注释。 12/*这是多行注释这是多行注释*/  文档注释。  12345/***这里是文档注释*@author*@version*/   文档注释是用于生成API文档的，API文档是用于说明类、方法、成员变量的功能。">
-<meta name="twitter:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/java关键字.png">
+<meta name="twitter:title" content="Servlet学习(2)-ServletAPI">
+<meta name="twitter:description" content="Servlet APIServlet相关接口和类-Servlet技术/ServletAPI.png) Servlet接口 Java Servlet不是独立的应用程序，没有main()方法。 它不由用户或程序员直接调用，而是生存在容器中，由容器管理  要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。12345678910public void">
+<meta name="twitter:image" content="http://whisper912.github.io/Servlet学习(2)-Servlet技术/Servlet学习(2">
 
 
 
@@ -133,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/">
+  <link rel="canonical" href="http://whisper912.github.io/Servlet学习(2)-Servlet技术/">
 
 
 
 
 
-  <title>笔记-疯狂Java讲义-第2章 数据类型和运算符 | 炸毛刺猬的个人BLOG</title>
+  <title>Servlet学习(2)-ServletAPI | 炸毛刺猬的个人BLOG</title>
   
 
 
@@ -276,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://whisper912.github.io/笔记-疯狂Java讲义-第2章-数据类型和运算符/">
+    <link itemprop="mainEntityOfPage" href="http://whisper912.github.io/Servlet学习(2)-Servlet技术/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="炸毛刺猬">
@@ -293,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">笔记-疯狂Java讲义-第2章 数据类型和运算符</h1>
+          <h1 class="post-title" itemprop="name headline">Servlet学习(2)-ServletAPI</h1>
         
 
         <div class="post-meta">
@@ -305,8 +306,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-28T10:13:51+08:00">
-                2019-02-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-30T21:42:05+08:00">
+                2019-05-30
               </time>
             
 
@@ -328,8 +329,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
+                  <a href="/categories/Servlet/" itemprop="url" rel="index">
+                    <span itemprop="name">Servlet</span>
                   </a>
                 </span>
 
@@ -345,7 +346,7 @@
 
           
           
-             <span id="/笔记-疯狂Java讲义-第2章-数据类型和运算符/" class="leancloud_visitors" data-flag-title="笔记-疯狂Java讲义-第2章 数据类型和运算符">
+             <span id="/Servlet学习(2)-Servlet技术/" class="leancloud_visitors" data-flag-title="Servlet学习(2)-ServletAPI">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -377,42 +378,27 @@
       
 
       
-        <p>Java是强类型语言。强类型包含两方面含义：</p>
-<ol>
-<li>所有变量必须先声明后使用。</li>
-<li>指定类型变量只能接受类型与之匹配的值。</li>
-</ol>
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>Java有三种类型的注释：</p>
-<ol>
-<li>单行注释。<code>//这是单行注释</code></li>
-<li><p>多行注释。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*这是多行注释</span></span><br><span class="line"><span class="comment">这是多行注释*/</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文档注释。 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">*这里是文档注释</span></span><br><span class="line"><span class="comment">*<span class="doctag">@author</span></span></span><br><span class="line"><span class="comment">*<span class="doctag">@version</span></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>文档注释是用于生成API文档的，API文档是用于说明类、方法、成员变量的功能。文档注释可以用javadoc工具处理成API文档，并且javadoc工具默认只处理<strong>以public或protected修饰</strong>的类、接口、方法、成员变量、构造器、内部类之前的文档注释。javadoc命令的选项可以通过<code>javadoc -help</code>查看。</p>
-<h3 id="标识符和关键字"><a href="#标识符和关键字" class="headerlink" title="标识符和关键字"></a>标识符和关键字</h3><p>Java标识符由字母、下划线（_）、美元符（$）开头，后面可以跟任何数目的字母、数字、下划线、美元符，区分大小写。标识符不能是关键字和保留字，但可以包含关键字和保留字。Java还有三个特殊的直接量（literal）：true、false、null，标识符也不能是这三个直接量。<br>Java有50个关键字，Java关键字都是小写的，如下图。<br><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/java关键字.png" alt="java关键字"></p>
-<h3 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h3><p><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/java基本类型.png" alt="基本类型"></p>
-<h4 id="数值中使用下划线"><a href="#数值中使用下划线" class="headerlink" title="数值中使用下划线"></a>数值中使用下划线</h4><p>Java7开始，可以在数值中使用下划线，不论是整型数值还是浮点型数值。<br><code>double pi = 3.14_15_92_65_36</code></p>
-<h4 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h4><p><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/整数赋值.png" alt="整数赋值"><br><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/整数赋值举例.png" alt="整数赋值"><br>所有数字在计算机底层都是二进制形式存在。原码是直接将一个数换算成二进制数。计算机以补码形式保存所有整数。补码的计算规则是：正数补码与原码相等，负数的补码是原码的反码加1（反码是除了符号位，按位取反）。</p>
-<p>整数默认是int型，使用二进制定义整数时，二进制整数默认占32位，第32位是符号位；如果在二进制整数后加字母L/l，二进制整数被认为是long型，占64位，第64位是符号位。如下图举例：</p>
-<p><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/整数加L举例.png" alt="整数加L举例"></p>
-<h4 id="浮点型"><a href="#浮点型" class="headerlink" title="浮点型"></a>浮点型</h4><p><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/java浮点数.png" alt="整数加L举例"><br>java默认浮点类型数值是double，在其后加F/f可变为float。<br><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/java特殊浮点值.png" alt="整数加L举例"></p>
-<h4 id="boolean型"><a href="#boolean型" class="headerlink" title="boolean型"></a>boolean型</h4><p>boolean的值只能是true或false，不能用0和非0表示，其他基本数据类型的值也不能转换成boolean型。<br>字符串”true”和”false”不能直接转换成Boolean型，但boolean类型和字符串连接可以将boolean类型的值转换成字符串。<br><code>String str = true + &quot;&quot;;</code></p>
-<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/自动强制类型转换.png" alt="自动强制类型转换"><br><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/parseXxx.png" alt="parseXxx"></p>
-<p>算数表达式的自动提升<br><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/算数表达式的自动提升.png" alt="算数表达式的自动提升"></p>
-<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><ul>
-<li>赋值表达式的值是等号右边的值。</li>
-<li>位运算符<br><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/位运算符.png" alt="位运算符"><ul>
-<li>左移（&lt;&lt;）运算符是将操作数的二进制码整体左移指定位，右边补0.</li>
-<li>右移（&gt;&gt;）是左边空出来的位填符号位（正数填0，负数填1）。</li>
-<li>无符号右移（&gt;&gt;&gt;）左边空位填0。<br><img src="/笔记-疯狂Java讲义-第2章-数据类型和运算符/移位运算规则.png" alt="移位运算规则"></li>
+        <h3 id="Servlet-API"><a href="#Servlet-API" class="headerlink" title="Servlet API"></a>Servlet API</h3><p>Servlet相关接口和类<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletAPI.png">-Servlet技术/ServletAPI.png)</p>
+<h4 id="Servlet接口"><a href="#Servlet接口" class="headerlink" title="Servlet接口"></a>Servlet接口</h4><ul>
+<li>Java Servlet不是独立的应用程序，没有main()方法。</li>
+<li>它不由用户或程序员直接调用，而是生存在容器中，由容器管理</li>
 </ul>
-</li>
-<li>逻辑运算符<br>||(或)和|(不短路或)，不短路或（|）前后两个操作数都会计算，不短路与（&amp;）同。</li>
-</ul>
+<p>要编写一个Servlet就要实现javax.servlet.Servlet接口，该接口中定义了5个方法。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(ServletConfig config)</span> <span class="keyword">throws</span> ServletException</span></span><br><span class="line"><span class="function"><span class="comment">//init()：在Servlet实例化后，Servlet容器会调用init方法来初始化该对象。对于每个Servlet实例，init()只能被调用一次。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(ServletRequest req, ServletResponse res)</span> <span class="keyword">throws</span> ServletException</span></span><br><span class="line"><span class="function"><span class="comment">//service(): 容器调用servic()处理客户端发过来的请求。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//destroy()：当某个Servlet对象不再使用了，容器调用destroy()释放资源。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ServletConfig <span class="title">getServletConfig</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//返回init()传递给Servlet对象的ServletConfig对象。</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> java.lang.String <span class="title">getServletInfo</span><span class="params">()</span></span></span><br><span class="line"><span class="function"><span class="comment">//返回Servlet信息</span></span></span><br></pre></td></tr></table></figure></p>
+<h4 id="ServletRequst和ServletResponse"><a href="#ServletRequst和ServletResponse" class="headerlink" title="ServletRequst和ServletResponse"></a>ServletRequst和ServletResponse</h4><p>因为Servlet是由Servlet容器来管理的，当客户端传来一个请求，Servlet容器会创建一个ServletRequest对象封装请求数据，同时创建一个ServletResponse对象封装响应数据。容器将这两个对象作为service()的参数传给Servlet，Servlet使用ServletRequest对象获取请求，利用ServletResponse对象发送响应。<br>ServletRequest和ServletResponse接口定义在javax.servlet包中。</p>
+<h5 id="ServletRequest接口中的常用方法"><a href="#ServletRequest接口中的常用方法" class="headerlink" title="ServletRequest接口中的常用方法"></a>ServletRequest接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletRequest常用方法(1).png">-Servlet技术/ServletRequest常用方法(1).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletRequest常用方法(2).png">-Servlet技术/ServletRequest常用方法(2).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletRequest常用方法(3).png">-Servlet技术/ServletRequest常用方法(3).png)</p>
+<h5 id="ServletResponse接口中的常用方法"><a href="#ServletResponse接口中的常用方法" class="headerlink" title="ServletResponse接口中的常用方法"></a>ServletResponse接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletResponse常用方法(1).png">-Servlet技术/ServletResponse常用方法(1).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletResponse常用方法(1).png">-Servlet技术/ServletResponse常用方法(2).png)</p>
+<h4 id="ServletConfig"><a href="#ServletConfig" class="headerlink" title="ServletConfig"></a>ServletConfig</h4><p>在javax.servlet包中还定义了ServletConfig接口。Servlet容器使用ServletConfig对象在初始化时向Servlet传递配置信息，一个Servlet只有一个ServletConfig对象。</p>
+<h5 id="ServletConfig接口中的常用方法"><a href="#ServletConfig接口中的常用方法" class="headerlink" title="ServletConfig接口中的常用方法"></a>ServletConfig接口中的常用方法</h5><p><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="ServletConfig方法.png">-Servlet技术/ServletConfig方法.png)</p>
+<h4 id="GenericServlet"><a href="#GenericServlet" class="headerlink" title="GenericServlet"></a>GenericServlet</h4><p>通过实现Servlet接口编写Servlet类非常麻烦，需要自己重写5个函数，为了简化编写，javax.servlet包中提供了抽象类GenericServlet，它给出了除了service()方法以外的其他方法的简单实现。GenericServlet定义了一个通用的、不依赖具体协议的Servlet，它实现了Servlet接口和ServletConfig接口。<br>此时，我们编写Servlet时只需要继承GenericServlet，实现service()方法就行了。<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="GenericServlet的方法.png">-Servlet技术/GenericServlet的方法.png)</p>
+<h4 id="HttpServlet"><a href="#HttpServlet" class="headerlink" title="HttpServlet"></a>HttpServlet</h4><p>为了快速开发基于http的Servlet类，javax.servlet.http包中提供了一个抽象类HttpServlet，它继承自GenericServlet。<br>HttpServlet提供了两个重载的service()方法：<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="HttpServlet重载的service()方法.png">-Servlet技术/HttpServlet重载的service()方法.png)<br>针对HTTP1.1的7种请求方法GET, POST, HEAD, PUT, DELETE, TRACE和OPTION，HttpServlet提供7个方法处理：<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="doXXX().png">-Servlet技术/doXXX().png)<br>这7个方法的参数都是HttpServletRequest和HttpServletResponse类型，与第二个重载的service()方法相同。当容器收到一个针对HttpServlet的请求时，方法调用顺序如下：</p>
+<ol>
+<li>调用继承过来的public service()方法</li>
+<li>在public service()方法中，将ServletRequset和ServletResponse强转为HttpServletRequest和HttpServletResponse类型，并将转换后的参数作为重载的protected service()方法的参数传入，调用protected service()方法。</li>
+<li>在protected service()方法中，先调用HttpServletRequest对象的getMethod()方法，获取HTTP请求的类型，根据不同类型调用不同的doXxx()方法。<br>因此，在编写HttpServlet派生类时只需要重写相应的doXxx()方法，不用重写service()。</li>
+</ol>
+<h4 id="HttpServletRequest和HttpServletResponse"><a href="#HttpServletRequest和HttpServletResponse" class="headerlink" title="HttpServletRequest和HttpServletResponse"></a>HttpServletRequest和HttpServletResponse</h4><p>在javax.servlet.http包中，定义了HttpServletRequest和HttpServletResponse这两个接口。他们分别继承自ServletRequest和ServletResponse接口。</p>
+<h5 id="HttpServletRequest接口中新增的方法"><a href="#HttpServletRequest接口中新增的方法" class="headerlink" title="HttpServletRequest接口中新增的方法"></a>HttpServletRequest接口中新增的方法</h5><p><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="HttpServletRequest新增的方法(1).png">-Servlet技术/HttpServletRequest新增的方法(1).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="HttpServletRequest新增的方法(2).png">-Servlet技术/HttpServletRequest新增的方法(2).png)<br><img src="/Servlet学习(2)-Servlet技术/Servlet学习(2" alt="HttpServletRequest新增的方法(3).png">-Servlet技术/HttpServletRequest新增的方法(3).png)</p>
+<h5 id="HttpServletResponse新增了一组静态常量"><a href="#HttpServletResponse新增了一组静态常量" class="headerlink" title="HttpServletResponse新增了一组静态常量"></a>HttpServletResponse新增了一组静态常量</h5><p>表示HTTP错误代码，对应于HTTP1.1错误代码，具体可以查看HttpServletResponse接口的API文档。<br><a href="https://javaee.github.io/javaee-spec/javadocs/" target="_blank" rel="noopener">java ee文档地址</a><br>在左上角选对应的包，左下角选择接口或类，就可以在右边查看相应API文档介绍</p>
 
       
     </div>
@@ -430,7 +416,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Java/" rel="tag"># Java</a>
+            <a href="/tags/Servlet-API/" rel="tag"># Servlet API</a>
           
         </div>
       
@@ -443,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/笔记-疯狂Java讲义-第1章概述/" rel="next" title="笔记-疯狂Java讲义-第1章概述">
-                <i class="fa fa-chevron-left"></i> 笔记-疯狂Java讲义-第1章概述
+              <a href="/Servlet学习(1)-Servlet和Tomcat/" rel="next" title="Servlet学习(1)-Servlet和Tomcat">
+                <i class="fa fa-chevron-left"></i> Servlet学习(1)-Servlet和Tomcat
               </a>
             
           </div>
@@ -452,10 +438,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/笔记-疯狂Java讲义-第3章-流程控制与数组/" rel="prev" title="笔记-疯狂Java讲义-第3章 流程控制与数组">
-                笔记-疯狂Java讲义-第3章 流程控制与数组 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -608,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">1.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标识符和关键字"><span class="nav-number">2.</span> <span class="nav-text">标识符和关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基本数据类型"><span class="nav-number">3.</span> <span class="nav-text">基本数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数值中使用下划线"><span class="nav-number">3.1.</span> <span class="nav-text">数值中使用下划线</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#整型"><span class="nav-number">3.2.</span> <span class="nav-text">整型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浮点型"><span class="nav-number">3.3.</span> <span class="nav-text">浮点型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#boolean型"><span class="nav-number">3.4.</span> <span class="nav-text">boolean型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#强制类型转换"><span class="nav-number">4.</span> <span class="nav-text">强制类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算符"><span class="nav-number">5.</span> <span class="nav-text">运算符</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Servlet-API"><span class="nav-number">1.</span> <span class="nav-text">Servlet API</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Servlet接口"><span class="nav-number">1.1.</span> <span class="nav-text">Servlet接口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ServletRequst和ServletResponse"><span class="nav-number">1.2.</span> <span class="nav-text">ServletRequst和ServletResponse</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ServletRequest接口中的常用方法"><span class="nav-number">1.2.1.</span> <span class="nav-text">ServletRequest接口中的常用方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#ServletResponse接口中的常用方法"><span class="nav-number">1.2.2.</span> <span class="nav-text">ServletResponse接口中的常用方法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ServletConfig"><span class="nav-number">1.3.</span> <span class="nav-text">ServletConfig</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ServletConfig接口中的常用方法"><span class="nav-number">1.3.1.</span> <span class="nav-text">ServletConfig接口中的常用方法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#GenericServlet"><span class="nav-number">1.4.</span> <span class="nav-text">GenericServlet</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HttpServlet"><span class="nav-number">1.5.</span> <span class="nav-text">HttpServlet</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HttpServletRequest和HttpServletResponse"><span class="nav-number">1.6.</span> <span class="nav-text">HttpServletRequest和HttpServletResponse</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#HttpServletRequest接口中新增的方法"><span class="nav-number">1.6.1.</span> <span class="nav-text">HttpServletRequest接口中新增的方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HttpServletResponse新增了一组静态常量"><span class="nav-number">1.6.2.</span> <span class="nav-text">HttpServletResponse新增了一组静态常量</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
