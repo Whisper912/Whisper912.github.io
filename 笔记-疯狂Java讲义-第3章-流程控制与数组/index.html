@@ -84,16 +84,16 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="笔记-疯狂Java讲义-第3章-流程控制与数组">
 <meta property="og:url" content="http://whisper912.github.io/笔记-疯狂Java讲义-第3章-流程控制与数组/index.html">
-<meta property="og:site_name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
+<meta property="og:site_name" content="炸毛刺猬 _(:з」∠)_">
 <meta property="og:description" content="顺序结构、选择结构、循环结构需要注意的点如下：  switch语句后面的表达式可以为byte，int，short，char，从Java7开始允许String（java.lang.String）和枚举类型enum，不能是boolean。 Java不支持goto语句 Java中可以用标签标识外层循环（Java中的标签是标识符后紧跟冒号（:）)，然后使用’break 标签名’直接跳出外层循环，或’co">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第3章-流程控制与数组/%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.png">
-<meta property="og:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第3章-流程控制与数组/Arrays%E7%B1%BB%E7%9A%84%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81.png">
+<meta property="og:image" content="http://whisper912.github.io/.io//%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.png">
+<meta property="og:image" content="http://whisper912.github.io/.io//Arrays%E7%B1%BB%E7%9A%84%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81.png">
 <meta property="og:updated_time" content="2019-05-30T16:04:51.298Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记-疯狂Java讲义-第3章-流程控制与数组">
 <meta name="twitter:description" content="顺序结构、选择结构、循环结构需要注意的点如下：  switch语句后面的表达式可以为byte，int，short，char，从Java7开始允许String（java.lang.String）和枚举类型enum，不能是boolean。 Java不支持goto语句 Java中可以用标签标识外层循环（Java中的标签是标识符后紧跟冒号（:）)，然后使用’break 标签名’直接跳出外层循环，或’co">
-<meta name="twitter:image" content="http://whisper912.github.io/笔记-疯狂Java讲义-第3章-流程控制与数组/%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.png">
+<meta name="twitter:image" content="http://whisper912.github.io/.io//%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.png">
 
 
 
@@ -129,7 +129,7 @@
 
 
 
-  <title>笔记-疯狂Java讲义-第3章-流程控制与数组 | 炸毛刺猬 (゜-゜)つロ 干杯~</title>
+  <title>笔记-疯狂Java讲义-第3章-流程控制与数组 | 炸毛刺猬 _(:з」∠)_</title>
   
 
 
@@ -159,7 +159,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">炸毛刺猬 (゜-゜)つロ 干杯~</span>
+        <span class="site-title">炸毛刺猬 _(:з」∠)_</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -307,7 +307,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
+      <meta itemprop="name" content="炸毛刺猬 _(:з」∠)_">
     </span>
 
     
@@ -433,7 +433,7 @@
 <h4 id="多维数组？"><a href="#多维数组？" class="headerlink" title="多维数组？"></a>多维数组？</h4><p>Java中实际没有多维数组，例如定义一个二维数组<code>int[][]a</code>,实际上是定义了一个int[] 一维数组，每个数组元素又是一个int[]的一维数组</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String[][] str2 = <span class="keyword">new</span> String[][]&#123;<span class="keyword">new</span> String[<span class="number">3</span>], <span class="keyword">new</span> String[]&#123;<span class="string">"hello"</span>&#125;&#125;;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/笔记-疯狂Java讲义-第3章-流程控制与数组/%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.png" alt="静态初始化二维数组"></p>
+<p><img src="/.io//%E9%9D%99%E6%80%81%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84.png" alt="静态初始化二维数组"></p>
 <h4 id="Java8工具类：Arrays"><a href="#Java8工具类：Arrays" class="headerlink" title="Java8工具类：Arrays"></a>Java8工具类：Arrays</h4><p>Arrays类中的一些方法如下，使用 Arrays类时需要<code>import java.util.Arrays</code></p>
 <ul>
 <li><code>type binarySearch(type[] a, type key)</code>  二分法查找元素值为key的元素的下标，注意当数组是有序的才得到正确结果</li>
@@ -445,7 +445,7 @@
 <li><code>type[] copyOf(type[] original, int length)</code>  把original数组复制到一个新数组，length是新数组长度  </li>
 <li><code>type[] copyOfRange(type[] original, int from, int to)</code> 只复制下标从from到int的元素</li>
 <li><code>boolean equals(type[] a, type[] b)</code>  a和b数组长度相等且元素一一相同，返回true。</li>
-<li><code>String toString(type[] a)</code>  将数组转换成一个字符串如<code>[1,2,大傻子]</code><br><img src="/笔记-疯狂Java讲义-第3章-流程控制与数组/Arrays%E7%B1%BB%E7%9A%84%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81.png" alt="Arrays类的用法实例代码"></li>
+<li><code>String toString(type[] a)</code>  将数组转换成一个字符串如<code>[1,2,大傻子]</code><br><img src="/.io//Arrays%E7%B1%BB%E7%9A%84%E7%94%A8%E6%B3%95%E5%AE%9E%E4%BE%8B%E4%BB%A3%E7%A0%81.png" alt="Arrays类的用法实例代码"></li>
 </ul>
 
       

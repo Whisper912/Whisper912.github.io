@@ -84,19 +84,19 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Servlet学习(5)-数据库访问">
 <meta property="og:url" content="http://whisper912.github.io/Servlet学习(5)-数据库访问/index.html">
-<meta property="og:site_name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
+<meta property="og:site_name" content="炸毛刺猬 _(:з」∠)_">
 <meta property="og:description" content="JDBC APIJDBC API包含在JDK中，分为java.sql和javax.sql两个包。java.sql定义了访问数据库的接口和类。下面是一段访问数据库的实例代码： 1234Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);Connection conn = DriverManger.getConnection(&quot;jdbc:mysql://localhos">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(5)-数据库访问/Drvier%E5%92%8CDriverManager%E9%80%9A%E4%BF%A1.png">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(5)-数据库访问/ResultSet%E7%9A%84%E6%96%B9%E6%B3%95.png">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(5)-数据库访问/ResultSetMetaData%E6%8E%A5%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95.png">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(5)-数据库访问/SQL%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB.png">
-<meta property="og:image" content="http://whisper912.github.io/Servlet学习(5)-数据库访问/setTransactionIsolation%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%82%E6%95%B0.png">
+<meta property="og:image" content="http://whisper912.github.io/.io//Drvier%E5%92%8CDriverManager%E9%80%9A%E4%BF%A1.png">
+<meta property="og:image" content="http://whisper912.github.io/.io//ResultSet%E7%9A%84%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="http://whisper912.github.io/.io//ResultSetMetaData%E6%8E%A5%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95.png">
+<meta property="og:image" content="http://whisper912.github.io/.io//SQL%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB.png">
+<meta property="og:image" content="http://whisper912.github.io/.io//setTransactionIsolation%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%82%E6%95%B0.png">
 <meta property="og:updated_time" content="2019-06-10T08:33:45.144Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Servlet学习(5)-数据库访问">
 <meta name="twitter:description" content="JDBC APIJDBC API包含在JDK中，分为java.sql和javax.sql两个包。java.sql定义了访问数据库的接口和类。下面是一段访问数据库的实例代码： 1234Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);Connection conn = DriverManger.getConnection(&quot;jdbc:mysql://localhos">
-<meta name="twitter:image" content="http://whisper912.github.io/Servlet学习(5)-数据库访问/Drvier%E5%92%8CDriverManager%E9%80%9A%E4%BF%A1.png">
+<meta name="twitter:image" content="http://whisper912.github.io/.io//Drvier%E5%92%8CDriverManager%E9%80%9A%E4%BF%A1.png">
 
 
 
@@ -132,7 +132,7 @@
 
 
 
-  <title>Servlet学习(5)-数据库访问 | 炸毛刺猬 (゜-゜)つロ 干杯~</title>
+  <title>Servlet学习(5)-数据库访问 | 炸毛刺猬 _(:з」∠)_</title>
   
 
 
@@ -162,7 +162,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">炸毛刺猬 (゜-゜)つロ 干杯~</span>
+        <span class="site-title">炸毛刺猬 _(:з」∠)_</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -310,7 +310,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="炸毛刺猬 (゜-゜)つロ 干杯~">
+      <meta itemprop="name" content="炸毛刺猬 _(:з」∠)_">
     </span>
 
     
@@ -419,7 +419,7 @@
 <li>oracle<br>oracle.jdbc.driver.OracleDriver</li>
 <li>mysql<br>com.mysql.cj.jdbc.Driver</li>
 </ul>
-<p>Driver接口中提供了一个Connect()方法，用来建立到数据库的连接。我们编程时不需要直接访问这些实现了Driver接口的类，我们使用JDBC驱动管理器（DriverManager）注册每个驱动程序，使用DriverManager提供的方法建立数据库连接。而DriverManager的连接方法去调用这些驱动类的connect()方法建立数据库连接。<br><img src="/Servlet学习(5)-数据库访问/Drvier%E5%92%8CDriverManager%E9%80%9A%E4%BF%A1.png" alt="Drvier和DriverManager通信.png"></p>
+<p>Driver接口中提供了一个Connect()方法，用来建立到数据库的连接。我们编程时不需要直接访问这些实现了Driver接口的类，我们使用JDBC驱动管理器（DriverManager）注册每个驱动程序，使用DriverManager提供的方法建立数据库连接。而DriverManager的连接方法去调用这些驱动类的connect()方法建立数据库连接。<br><img src="/.io//Drvier%E5%92%8CDriverManager%E9%80%9A%E4%BF%A1.png" alt="Drvier和DriverManager通信.png"></p>
 <h5 id="加载与注册JDBC驱动"><a href="#加载与注册JDBC驱动" class="headerlink" title="加载与注册JDBC驱动"></a>加载与注册JDBC驱动</h5><p>加载JDBC驱动是调用Class类的静态方法forName(),向其传递要加载的JDBC类名。在运行时，类加载器从CLASSPATH中定位加载JDBC驱动类，加载后，注册驱动类的一个实例。<br>DriverManager类中所有方法都是静态的，它提供了registerDriver()方法注册驱动类的实例，这个方法也不用我们亲自来调用。因为实现Driver接口的驱动程序类包含了静态代码块，在这个静态代码块中会调用DriverManager.registerDriver()注册自身的一个实例。当这个驱动类被加载时（也就是调用Class.forName()时），类加载器会执行该类的静态代码块，从而注册驱动类的一个实例。</p>
 <h4 id="建立到数据库的连接"><a href="#建立到数据库的连接" class="headerlink" title="建立到数据库的连接"></a>建立到数据库的连接</h4><p>调用DriverManager的getConnection()方法建立对数据库的连接，返回一个COnnection对象。DriverManager中提供三个重载的getConnection()方法，常用的一个如下：<br><code>public static Connection getConnection(String url, String user, String password) throws SQLException</code><br>该方法需要数据库的URL，用户名和密码名。<br>常用JDBC URL格式如下：</p>
 <ul>
@@ -433,13 +433,13 @@
 <li>ResultSet executeQuery(String sql) throws SQLException<br>该方法执行一歌查询语句，返回一个ResultSet对象</li>
 <li>int updateQuery(String sql) throws SQLException<br>该方法执行INSERT、UPDATE或DELETE操作。也可以执行DDL操作，如CREATE TABLE。</li>
 <li>boolean execute(String sql) throws SQLException<br>该方法执行返回多个结果集的SQL语句，通常不用。</li>
-<li>int[] executeBatch() throws SQLException<br>该方法允许我们向数据库提交一批命令，一起执行。<h5 id="ResultSet"><a href="#ResultSet" class="headerlink" title="ResultSet"></a>ResultSet</h5>调用Statement对象的executeQuery()方法创建了一个ResultSet对象。ResultSet对象以逻辑表格的形式封装了执行数据库操作的结果集。ResultSet对象维护了一个指向当前数据行的游标，初始时，游标在第一行之前，可以通过ResultSet对象的next()方法移动到游标下一行。<br><code>boolean next() throws SQLException</code><br>该方法移动游标到下一行，如果新数据行仍然有效，返回true。<br>ResultSet中定义了许多方法获取当前行的数据：<br><img src="/Servlet学习(5)-数据库访问/ResultSet%E7%9A%84%E6%96%B9%E6%B3%95.png" alt="ResultSet的方法.png"><br>这些方法提供了两组形式的调用：一种以列的索引号为参数（列的索引从1开始）；另一种以列名作为参数，例如对getString()方法如下：</li>
+<li>int[] executeBatch() throws SQLException<br>该方法允许我们向数据库提交一批命令，一起执行。<h5 id="ResultSet"><a href="#ResultSet" class="headerlink" title="ResultSet"></a>ResultSet</h5>调用Statement对象的executeQuery()方法创建了一个ResultSet对象。ResultSet对象以逻辑表格的形式封装了执行数据库操作的结果集。ResultSet对象维护了一个指向当前数据行的游标，初始时，游标在第一行之前，可以通过ResultSet对象的next()方法移动到游标下一行。<br><code>boolean next() throws SQLException</code><br>该方法移动游标到下一行，如果新数据行仍然有效，返回true。<br>ResultSet中定义了许多方法获取当前行的数据：<br><img src="/.io//ResultSet%E7%9A%84%E6%96%B9%E6%B3%95.png" alt="ResultSet的方法.png"><br>这些方法提供了两组形式的调用：一种以列的索引号为参数（列的索引从1开始）；另一种以列名作为参数，例如对getString()方法如下：</li>
 <li>String getString(int columnIndex) throws SQLException</li>
-<li>String getString(String columnName) throws SQLException<br>对于不知道要获取的列的数据类型，可以一律采用getString()<h5 id="PreparedStatement"><a href="#PreparedStatement" class="headerlink" title="PreparedStatement"></a>PreparedStatement</h5>在程序中传递的SQL语句在执行前必须被预编译，然后才被数据库引擎执行。如果重复执行只有参数不同的SQL语句，较低效。如果需要用不同的参数多次执行同一个SQL语句，可以使用PreparedStatement对象。PreparedStatement接口继承自Statement接口。可以通过调用Connection对象的prepareStatement()方法得到PreparedStatement对象。PreparedStatement对象所代表的SQL语句中的参数用问号（?）表示，调用PreparedStatement对象的setXxx()方法设置参数。setXxx()方法有两个参数，第一个是要设置的参数的索引（从1开始），第二个是要设置的参数值。<h5 id="元数据"><a href="#元数据" class="headerlink" title="元数据"></a>元数据</h5>在SQL中，用于描述数据库或者它的各组成部分之一的数据成为元数据。在java.sql包中提供了一个接口ResultSetMetaData，用于获取描述数据库表结构的元数据。<br>可以调用ResultSet对象的getMetaData()方法获得ResultSetMetaData对象。ResultSetMetaData接口定义了如下常用方法：<br><img src="/Servlet学习(5)-数据库访问/ResultSetMetaData%E6%8E%A5%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95.png" alt="ResultSetMetaData接口的方法.png"><br>在java.sql包中，还提供了</li>
+<li>String getString(String columnName) throws SQLException<br>对于不知道要获取的列的数据类型，可以一律采用getString()<h5 id="PreparedStatement"><a href="#PreparedStatement" class="headerlink" title="PreparedStatement"></a>PreparedStatement</h5>在程序中传递的SQL语句在执行前必须被预编译，然后才被数据库引擎执行。如果重复执行只有参数不同的SQL语句，较低效。如果需要用不同的参数多次执行同一个SQL语句，可以使用PreparedStatement对象。PreparedStatement接口继承自Statement接口。可以通过调用Connection对象的prepareStatement()方法得到PreparedStatement对象。PreparedStatement对象所代表的SQL语句中的参数用问号（?）表示，调用PreparedStatement对象的setXxx()方法设置参数。setXxx()方法有两个参数，第一个是要设置的参数的索引（从1开始），第二个是要设置的参数值。<h5 id="元数据"><a href="#元数据" class="headerlink" title="元数据"></a>元数据</h5>在SQL中，用于描述数据库或者它的各组成部分之一的数据成为元数据。在java.sql包中提供了一个接口ResultSetMetaData，用于获取描述数据库表结构的元数据。<br>可以调用ResultSet对象的getMetaData()方法获得ResultSetMetaData对象。ResultSetMetaData接口定义了如下常用方法：<br><img src="/.io//ResultSetMetaData%E6%8E%A5%E5%8F%A3%E7%9A%84%E6%96%B9%E6%B3%95.png" alt="ResultSetMetaData接口的方法.png"><br>在java.sql包中，还提供了</li>
 <li>DatabaseMetaData接口<br>用于获取数据库信息<br>可以通过调用Connection对象的getMetaData()方法获取DatabaseMetaData对象</li>
 <li>ParameterMetaData接口<br>用于得到PreparedStatement对象中的参数类型和属性信息。<br>调用PreparedStatement对象的getParameterMetaData()方法得到ParameterMetaData对象</li>
 </ul>
-<h4 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h4><p>事务是构成单个逻辑工作单元的操作集合。事务处理保证所有事务都作为一个工作单元来执行。当在一个事务中执行多个操作时，要么所有操作都被提交（commit），要么整个事务回滚（rollback）回最初的事务。<br>一个Connection对象被创建时，默认是自动提交事务。为了将多个SQL语句作为一个事务执行，可以调用Connection对象的setAutoCommit()方法，传入false取消自动提交，然后在所有SQL语句执行成功后，调用Connection对象的commit()方法提交事务，或者在执行出错时调用Connection对象的rollback()方法。<br>为了避免多个事务同时访问一份数据可能引发的冲突，我们需要设置事务的隔离级别。<br>标准SQL定义了4种事务隔离级别：<br><img src="/Servlet学习(5)-数据库访问/SQL%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB.png" alt="SQL事务隔离级别.png"><br>在Connection接口中定义了setTransactionIsolation()方法设置事务隔离级别，Connection接口还设置了5个常量值用做setTransactionIsolation()方法的参数：<br><img src="/Servlet学习(5)-数据库访问/setTransactionIsolation%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%82%E6%95%B0.png" alt="setTransactionIsolation方法的参数.png"></p>
+<h4 id="事务处理"><a href="#事务处理" class="headerlink" title="事务处理"></a>事务处理</h4><p>事务是构成单个逻辑工作单元的操作集合。事务处理保证所有事务都作为一个工作单元来执行。当在一个事务中执行多个操作时，要么所有操作都被提交（commit），要么整个事务回滚（rollback）回最初的事务。<br>一个Connection对象被创建时，默认是自动提交事务。为了将多个SQL语句作为一个事务执行，可以调用Connection对象的setAutoCommit()方法，传入false取消自动提交，然后在所有SQL语句执行成功后，调用Connection对象的commit()方法提交事务，或者在执行出错时调用Connection对象的rollback()方法。<br>为了避免多个事务同时访问一份数据可能引发的冲突，我们需要设置事务的隔离级别。<br>标准SQL定义了4种事务隔离级别：<br><img src="/.io//SQL%E4%BA%8B%E5%8A%A1%E9%9A%94%E7%A6%BB%E7%BA%A7%E5%88%AB.png" alt="SQL事务隔离级别.png"><br>在Connection接口中定义了setTransactionIsolation()方法设置事务隔离级别，Connection接口还设置了5个常量值用做setTransactionIsolation()方法的参数：<br><img src="/.io//setTransactionIsolation%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%82%E6%95%B0.png" alt="setTransactionIsolation方法的参数.png"></p>
 
       
     </div>
