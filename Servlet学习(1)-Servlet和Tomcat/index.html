@@ -86,13 +86,13 @@
 <meta property="og:site_name" content="炸毛刺猬 _(:з」∠)_">
 <meta property="og:description" content="Servlet学习系列基于孙鑫的《Servlet/JSP深入详解——基于Tomcat的Web开发》 Servlet和Servlet容器Servlet是一个基于java的web组件，有Servlet容器管理，用于生成动态页面。Servlet容器，也叫作Servlet引擎，是web服务器的一部分，用于在发送的请求和响应之上提供网络服务。Servlet不能独立运行，必须要由Servlet容器实例化并调用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://whisper912.github.io/.io//%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AEServlet.png">
-<meta property="og:image" content="http://whisper912.github.io/.io//Tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A5%E6%94%B6%E5%AE%A2%E6%88%B7%E8%AF%B7%E6%B1%82%E5%B9%B6%E4%BD%9C%E5%87%BA%E5%93%8D%E5%BA%94.png">
-<meta property="og:updated_time" content="2019-05-30T15:25:45.423Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/Whisper912/pic/master/Servlet%E5%AD%A6%E4%B9%A0(1)-Servlet%E5%92%8CTomcat/Tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A5%E6%94%B6%E5%AE%A2%E6%88%B7%E8%AF%B7%E6%B1%82%E5%B9%B6%E4%BD%9C%E5%87%BA%E5%93%8D%E5%BA%94.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Whisper912/pic/master/Servlet%E5%AD%A6%E4%B9%A0(1)-Servlet%E5%92%8CTomcat/%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AEServlet.png">
+<meta property="og:updated_time" content="2019-08-07T10:14:04.041Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Servlet学习(1)-Servlet和Tomcat">
 <meta name="twitter:description" content="Servlet学习系列基于孙鑫的《Servlet/JSP深入详解——基于Tomcat的Web开发》 Servlet和Servlet容器Servlet是一个基于java的web组件，有Servlet容器管理，用于生成动态页面。Servlet容器，也叫作Servlet引擎，是web服务器的一部分，用于在发送的请求和响应之上提供网络服务。Servlet不能独立运行，必须要由Servlet容器实例化并调用">
-<meta name="twitter:image" content="http://whisper912.github.io/.io//%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AEServlet.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Whisper912/pic/master/Servlet%E5%AD%A6%E4%B9%A0(1)-Servlet%E5%92%8CTomcat/Tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A5%E6%94%B6%E5%AE%A2%E6%88%B7%E8%AF%B7%E6%B1%82%E5%B9%B6%E4%BD%9C%E5%87%BA%E5%93%8D%E5%BA%94.png">
 
 
 
@@ -399,8 +399,8 @@
 
       
         <p>Servlet学习系列基于孙鑫的《Servlet/JSP深入详解——基于Tomcat的Web开发》</p>
-<h3 id="Servlet和Servlet容器"><a href="#Servlet和Servlet容器" class="headerlink" title="Servlet和Servlet容器"></a>Servlet和Servlet容器</h3><p>Servlet是一个基于java的web组件，有Servlet容器管理，用于生成动态页面。<br>Servlet容器，也叫作Servlet引擎，是web服务器的一部分，用于在发送的请求和响应之上提供网络服务。Servlet不能独立运行，必须要由Servlet容器实例化并调用Servlet的方法，Servlet容器在servlet的生命周期内管理Servlet。<br>也就是说，当用户在浏览器中输入网址请求页面，web服务器收到该请求后并不直接交给Servlet处理，而是交给Servlet容器。Servlet容器实例化Servlet并调用某个方法处理请求，并产生一个相应。然后Servlet容器将这个相应返回给web服务器，web服务器包装响应以HTTP响应的形式返回给web浏览器。<br><img src="/.io//%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AEServlet.png" alt="用户访问Servlet"></p>
-<h3 id="Tomcat简介"><a href="#Tomcat简介" class="headerlink" title="Tomcat简介"></a>Tomcat简介</h3><p>使用Servlet，需要有Servlet容器，作者用的是Tomcat。<br>Tomcat是个免费开源的Servlet容器，它支持Servlet和JSP。<br><img src="/.io//Tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A5%E6%94%B6%E5%AE%A2%E6%88%B7%E8%AF%B7%E6%B1%82%E5%B9%B6%E4%BD%9C%E5%87%BA%E5%93%8D%E5%BA%94.png" alt="Tomcat服务器接收客户请求并作出响应"></p>
+<h3 id="Servlet和Servlet容器"><a href="#Servlet和Servlet容器" class="headerlink" title="Servlet和Servlet容器"></a>Servlet和Servlet容器</h3><p>Servlet是一个基于java的web组件，有Servlet容器管理，用于生成动态页面。<br>Servlet容器，也叫作Servlet引擎，是web服务器的一部分，用于在发送的请求和响应之上提供网络服务。Servlet不能独立运行，必须要由Servlet容器实例化并调用Servlet的方法，Servlet容器在servlet的生命周期内管理Servlet。<br>也就是说，当用户在浏览器中输入网址请求页面，web服务器收到该请求后并不直接交给Servlet处理，而是交给Servlet容器。Servlet容器实例化Servlet并调用某个方法处理请求，并产生一个相应。然后Servlet容器将这个相应返回给web服务器，web服务器包装响应以HTTP响应的形式返回给web浏览器。<br><img src="https://raw.githubusercontent.com/Whisper912/pic/master/Servlet%E5%AD%A6%E4%B9%A0(1)-Servlet%E5%92%8CTomcat/Tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A5%E6%94%B6%E5%AE%A2%E6%88%B7%E8%AF%B7%E6%B1%82%E5%B9%B6%E4%BD%9C%E5%87%BA%E5%93%8D%E5%BA%94.png" alt=""></p>
+<h3 id="Tomcat简介"><a href="#Tomcat简介" class="headerlink" title="Tomcat简介"></a>Tomcat简介</h3><p>使用Servlet，需要有Servlet容器，作者用的是Tomcat。<br>Tomcat是个免费开源的Servlet容器，它支持Servlet和JSP。<br><img src="https://raw.githubusercontent.com/Whisper912/pic/master/Servlet%E5%AD%A6%E4%B9%A0(1)-Servlet%E5%92%8CTomcat/%E7%94%A8%E6%88%B7%E8%AE%BF%E9%97%AEServlet.png" alt=""></p>
 
       
     </div>
@@ -530,7 +530,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -541,7 +541,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
